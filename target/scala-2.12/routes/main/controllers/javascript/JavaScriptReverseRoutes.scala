@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/webapps/play/Project/conf/routes
-// @DATE:Fri Apr 13 11:05:54 IST 2018
+// @SOURCE:/home/wdd/webapps/attempt/conf/routes
+// @DATE:Mon Apr 16 15:55:20 IST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -20,12 +20,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:8
-    def subscribe: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.subscribe",
+    // @LINE:18
+    def addProductSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.addProductSubmit",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "subscribe"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addProductSubmit"})
         }
       """
     )
@@ -40,12 +40,22 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:20
+    def deleteProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.deleteProduct",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "delProduct/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
+        }
+      """
+    )
+  
     // @LINE:12
-    def pc: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.pc",
+    def Laptop: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.Laptop",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "pc"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "Laptop"})
         }
       """
     )
@@ -70,12 +80,32 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:17
+    def addProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.addProduct",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "addProduct"})
+        }
+      """
+    )
+  
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:8
+    def FAQ: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.FAQ",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "FAQ"})
         }
       """
     )
@@ -112,7 +142,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:18
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -120,7 +150,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:18
+    // @LINE:22
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

@@ -22,7 +22,7 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object subscribe extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[List[models.Product],play.twirl.api.HtmlFormat.Appendable] {
+object FAQ extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[List[models.Product],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
   def apply/*1.2*/(products: List[models.Product]):play.twirl.api.HtmlFormat.Appendable = {
@@ -105,9 +105,9 @@ Seq[Any](format.raw/*1.34*/("""
 					<li class="dropdown"><a href="/">Home</a></li>
 					<li class="dropdown"><a href="/tv">Televisions</a></li>
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
-					<li class="dropdown"><a href="/pc">Laptops</a></li>
+					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
 					<li class="dropdown"><a href="/about">About Us</a></li>
-					<li class="dropdown"><a href="/subscribe">Subscribe</a></li>
+					<li class="dropdown"><a href="/FAQ">FAQ</a></li>
 				</ul>
 			</header>
 			<main>
@@ -115,12 +115,11 @@ Seq[Any](format.raw/*1.34*/("""
 					<div id="leftCol">
 						<div class="outerColDiv">
 							<div class="col-sm-5">
-      <p>If you would like to subsrcibe to receive information and offers from us please register 
-		below. </p>
-	  <p> By registering I have raed and agree to the Website Terms and Privacy Policy.</p>
+      <p>If you're question isint answered in the FAQ you can submit your own question here and one of our staff will respond within 24 hours. </p>
+	  
       <p><span class="glyphicon glyphicon-map-marker"></span> Sandyford, Dublin</p>
       <p><span class="glyphicon glyphicon-phone"></span> 01 820876</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> queries AT computerhub.com</p>
+      
     </div>
 						</div>
 					
@@ -129,9 +128,45 @@ Seq[Any](format.raw/*1.34*/("""
 					<div id="centreCol">
 						<div class="outerColDiv">
 							<div>
+<!-- Accordain -->
+<button class="accordion">Q1</button>
+<div class="panel">
+  <p>Question!!!!</p>
+</div>
+
+<button class="accordion">Q2</button>
+<div class="panel">
+  <p>Question!!!!</p>
+</div>
+
+</div><button class="accordion">Q3</button>
+<div class="panel">
+  <p>Question!!!!</p>
+</div>
+
+<!-- JS For Accordain-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) """),format.raw/*120.34*/("""{"""),format.raw/*120.35*/("""
+  """),format.raw/*121.3*/("""acc[i].addEventListener("click", function() """),format.raw/*121.47*/("""{"""),format.raw/*121.48*/("""
+    """),format.raw/*122.5*/("""this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight)"""),format.raw/*124.31*/("""{"""),format.raw/*124.32*/("""
+      """),format.raw/*125.7*/("""panel.style.maxHeight = null;
+    """),format.raw/*126.5*/("""}"""),format.raw/*126.6*/(""" """),format.raw/*126.7*/("""else """),format.raw/*126.12*/("""{"""),format.raw/*126.13*/("""
+      """),format.raw/*127.7*/("""panel.style.maxHeight = panel.scrollHeight + "px";
+    """),format.raw/*128.5*/("""}"""),format.raw/*128.6*/(""" 
+  """),format.raw/*129.3*/("""}"""),format.raw/*129.4*/(""");
+"""),format.raw/*130.1*/("""}"""),format.raw/*130.2*/("""
+"""),format.raw/*131.1*/("""</script>
+
+
+
 											<!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">SUBSCRIBE</h2>
+  <h2 class="text-center">Ask a Question</h2>
   <div class="row">
     
     <div class="col-sm-7 slideanim">
@@ -166,7 +201,7 @@ Seq[Any](format.raw/*1.34*/("""
 
 			
 			<footer>
-				Copyright &copy; 2017
+				Copyright &copy; 2018
 			</footer>
 		</div>
 	</body>
@@ -186,11 +221,11 @@ Seq[Any](format.raw/*1.34*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 13 11:05:55 IST 2018
-                  SOURCE: /home/wdd/webapps/play/Project/app/views/subscribe.scala.html
-                  HASH: b25cf8618962b761d4a7802062f55a8aa9e9b3b0
-                  MATRIX: 966->1|1093->33|1121->35|1259->147|1273->153|1339->198|3146->1977|3175->1978|3216->1992|3316->2065|3344->2066|3374->2069
-                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|94->62|94->62|96->64|99->67|99->67|100->68
+                  DATE: Mon Apr 16 15:56:13 IST 2018
+                  SOURCE: /home/wdd/webapps/attempt/app/views/FAQ.scala.html
+                  HASH: e2564ddaa8081fc21330ff44e1c63725c6d7e323
+                  MATRIX: 960->1|1087->33|1115->35|1253->147|1267->153|1333->198|3140->1977|3169->1978|3210->1992|3310->2065|3338->2066|3368->2069|4782->3454|4812->3455|4843->3458|4916->3502|4946->3503|4979->3508|5112->3612|5142->3613|5177->3620|5239->3654|5268->3655|5297->3656|5331->3661|5361->3662|5396->3669|5479->3724|5508->3725|5540->3729|5569->3730|5600->3733|5629->3734|5658->3735
+                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|94->62|94->62|96->64|99->67|99->67|100->68|152->120|152->120|153->121|153->121|153->121|154->122|156->124|156->124|157->125|158->126|158->126|158->126|158->126|158->126|159->127|160->128|160->128|161->129|161->129|162->130|162->130|163->131
                   -- GENERATED --
               */
           

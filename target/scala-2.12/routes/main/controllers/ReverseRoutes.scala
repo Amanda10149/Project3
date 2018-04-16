@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/webapps/play/Project/conf/routes
-// @DATE:Fri Apr 13 11:05:54 IST 2018
+// @SOURCE:/home/wdd/webapps/attempt/conf/routes
+// @DATE:Mon Apr 16 15:55:20 IST 2018
 
 import play.api.mvc.Call
 
@@ -19,10 +19,10 @@ package controllers {
     }
 
   
-    // @LINE:8
-    def subscribe(): Call = {
+    // @LINE:18
+    def addProductSubmit(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "subscribe")
+      Call("POST", _prefix + { _defaultPrefix } + "addProductSubmit")
     }
   
     // @LINE:11
@@ -31,10 +31,16 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "tv")
     }
   
-    // @LINE:12
-    def pc(): Call = {
+    // @LINE:20
+    def deleteProduct(id:Long): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "pc")
+      Call("GET", _prefix + { _defaultPrefix } + "delProduct/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
+    }
+  
+    // @LINE:12
+    def Laptop(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "Laptop")
     }
   
     // @LINE:10
@@ -49,10 +55,22 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "about")
     }
   
+    // @LINE:17
+    def addProduct(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "addProduct")
+    }
+  
     // @LINE:6
     def index(): Call = {
       
       Call("GET", _prefix)
+    }
+  
+    // @LINE:8
+    def FAQ(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "FAQ")
     }
   
   }
@@ -78,14 +96,14 @@ package controllers {
   
   }
 
-  // @LINE:18
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:18
+    // @LINE:22
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))

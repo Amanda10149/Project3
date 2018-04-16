@@ -105,7 +105,7 @@ Seq[Any](format.raw/*1.1*/("""4<!DOCTYPE html>
 					<li class="dropdown"><a href="/">Home</a></li>
 					<li class="dropdown"><a href="/tv">Televisions</a></li>
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
-					<li class="dropdown"><a href="/pc">Laptops</a></li>
+					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
 					<li class="dropdown"><a href="/about">About Us</a></li>
 					<li class="dropdown"><a href="/subscribe">Subscribe</a></li>
 					<li class="dropdown"><a href="/login">login</a></li>
@@ -187,9 +187,9 @@ Seq[Any](format.raw/*1.1*/("""4<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 13 11:05:55 IST 2018
-                  SOURCE: /home/wdd/webapps/play/Project/app/views/about.scala.html
-                  HASH: fa33ffe723df0cbe1d6097d7931a23f1148035f2
+                  DATE: Mon Apr 16 15:56:13 IST 2018
+                  SOURCE: /home/wdd/webapps/attempt/app/views/about.scala.html
+                  HASH: 251d9be9184221bd9119862456b5d495deeb5305
                   MATRIX: 1030->0|1186->130|1200->136|1266->181|3073->1960|3102->1961|3143->1975|3243->2048|3271->2049|3301->2052
                   LINES: 33->1|40->8|40->8|40->8|94->62|94->62|96->64|99->67|99->67|100->68
                   -- GENERATED --

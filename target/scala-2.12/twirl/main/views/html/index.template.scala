@@ -107,7 +107,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 					<li class="dropdown"><a href="/">Home</a></li>
 					<li class="dropdown"><a href="/tv">Televisions</a></li>
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
-					<li class="dropdown"><a href="/pc">Laptops</a></li>
+					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
 					<li class="dropdown"><a href="/about">About Us</a></li>
           <li class="dropdown"><a href="/subscribe">Subscribe</a></li>
           <li class="dropdown"><a href="/login">Login</a></li>
@@ -176,10 +176,10 @@ table, th, td """),format.raw/*87.15*/("""{"""),format.raw/*87.16*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 13 11:05:55 IST 2018
-                  SOURCE: /home/wdd/webapps/play/Project/app/views/index.scala.html
-                  HASH: 6055111381ec85a9bcad77b23a3e76a0512931d8
-                  MATRIX: 1030->0|1185->129|1199->135|1265->180|3075->1962|3104->1963|3145->1977|3245->2050|3273->2051|3303->2054|3857->2580|3886->2581|3918->2586|4001->2642|4029->2643|4057->2644|4091->2651|4119->2652|4151->2657|4214->2693|4242->2694|4272->2697
+                  DATE: Mon Apr 16 15:49:44 IST 2018
+                  SOURCE: /home/wdd/webapps/attempt/app/views/index.scala.html
+                  HASH: 22ceac053f9f198a1814919a3ccb8b1533df263d
+                  MATRIX: 1030->0|1185->129|1199->135|1265->180|3075->1962|3104->1963|3145->1977|3245->2050|3273->2051|3303->2054|3861->2584|3890->2585|3922->2590|4005->2646|4033->2647|4061->2648|4095->2655|4123->2656|4155->2661|4218->2697|4246->2698|4276->2701
                   LINES: 33->1|40->8|40->8|40->8|96->64|96->64|98->66|101->69|101->69|102->70|119->87|119->87|120->88|122->90|122->90|123->91|123->91|123->91|124->92|126->94|126->94|129->97
                   -- GENERATED --
               */
