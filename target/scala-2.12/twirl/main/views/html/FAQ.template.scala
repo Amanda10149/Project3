@@ -100,7 +100,8 @@ Seq[Any](format.raw/*1.34*/("""
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
 					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
 					<li class="dropdown"><a href="/about">About Us</a></li>
-					<li class="dropdown"><a href="/FAQ">FAQ</a></li>
+          <li class="dropdown"><a href="/FAQ">FAQ</a></li>
+          <li class="dropdown"><a href="/login">Login</a></li>
 				</ul>
 			</header>
 			<main>
@@ -142,18 +143,18 @@ Seq[Any](format.raw/*1.34*/("""
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) """),format.raw/*113.34*/("""{"""),format.raw/*113.35*/("""
-  """),format.raw/*114.3*/("""acc[i].addEventListener("click", function() """),format.raw/*114.47*/("""{"""),format.raw/*114.48*/("""
-    """),format.raw/*115.5*/("""this.classList.toggle("active");
+for (i = 0; i < acc.length; i++) """),format.raw/*114.34*/("""{"""),format.raw/*114.35*/("""
+  """),format.raw/*115.3*/("""acc[i].addEventListener("click", function() """),format.raw/*115.47*/("""{"""),format.raw/*115.48*/("""
+    """),format.raw/*116.5*/("""this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight)"""),format.raw/*117.31*/("""{"""),format.raw/*117.32*/("""
-      """),format.raw/*118.7*/("""panel.style.maxHeight = null;
-    """),format.raw/*119.5*/("""}"""),format.raw/*119.6*/(""" """),format.raw/*119.7*/("""else """),format.raw/*119.12*/("""{"""),format.raw/*119.13*/("""
-      """),format.raw/*120.7*/("""panel.style.maxHeight = panel.scrollHeight + "px";
-    """),format.raw/*121.5*/("""}"""),format.raw/*121.6*/(""" 
-  """),format.raw/*122.3*/("""}"""),format.raw/*122.4*/(""");
-"""),format.raw/*123.1*/("""}"""),format.raw/*123.2*/("""
-"""),format.raw/*124.1*/("""</script>
+    if (panel.style.maxHeight)"""),format.raw/*118.31*/("""{"""),format.raw/*118.32*/("""
+      """),format.raw/*119.7*/("""panel.style.maxHeight = null;
+    """),format.raw/*120.5*/("""}"""),format.raw/*120.6*/(""" """),format.raw/*120.7*/("""else """),format.raw/*120.12*/("""{"""),format.raw/*120.13*/("""
+      """),format.raw/*121.7*/("""panel.style.maxHeight = panel.scrollHeight + "px";
+    """),format.raw/*122.5*/("""}"""),format.raw/*122.6*/(""" 
+  """),format.raw/*123.3*/("""}"""),format.raw/*123.4*/(""");
+"""),format.raw/*124.1*/("""}"""),format.raw/*124.2*/("""
+"""),format.raw/*125.1*/("""</script>
 
 
 
@@ -214,11 +215,11 @@ for (i = 0; i < acc.length; i++) """),format.raw/*113.34*/("""{"""),format.raw/*
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 17:41:42 IST 2018
+                  DATE: Mon Apr 16 20:31:25 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/FAQ.scala.html
-                  HASH: 963cd00e49f0bd9418b2d3ffd3d3194c4c13f0c2
-                  MATRIX: 960->1|1087->33|1115->35|1253->147|1267->153|1333->198|4490->3326|4520->3327|4551->3330|4624->3374|4654->3375|4687->3380|4820->3484|4850->3485|4885->3492|4947->3526|4976->3527|5005->3528|5039->3533|5069->3534|5104->3541|5187->3596|5216->3597|5248->3601|5277->3602|5308->3605|5337->3606|5366->3607
-                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|145->113|145->113|146->114|146->114|146->114|147->115|149->117|149->117|150->118|151->119|151->119|151->119|151->119|151->119|152->120|153->121|153->121|154->122|154->122|155->123|155->123|156->124
+                  HASH: 0d0bbb556ed6346e796c9c1dc73886ac6f04d487
+                  MATRIX: 960->1|1087->33|1115->35|1253->147|1267->153|1333->198|4558->3394|4588->3395|4619->3398|4692->3442|4722->3443|4755->3448|4888->3552|4918->3553|4953->3560|5015->3594|5044->3595|5073->3596|5107->3601|5137->3602|5172->3609|5255->3664|5284->3665|5316->3669|5345->3670|5376->3673|5405->3674|5434->3675
+                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|146->114|146->114|147->115|147->115|147->115|148->116|150->118|150->118|151->119|152->120|152->120|152->120|152->120|152->120|153->121|154->122|154->122|155->123|155->123|156->124|156->124|157->125
                   -- GENERATED --
               */
           

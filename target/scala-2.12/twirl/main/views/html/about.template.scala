@@ -113,7 +113,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-home"></a>
+      <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -122,6 +122,8 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
 					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
 					<li class="dropdown"><a href="/about">About Us</a></li>
+					<li class="dropdown"><a href="/FAQ">FAQ</a></li>
+					<li class="dropdown"><a href="/login">Login</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
@@ -206,9 +208,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 16:31:02 IST 2018
+                  DATE: Mon Apr 16 20:37:01 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/about.scala.html
-                  HASH: 3ba0c20d600d0b342c5aa0a7c07f296bff5a1c1a
+                  HASH: 619120e4a5d91e513e5290f349e7d74966050ad0
                   MATRIX: 1030->0|1185->129|1199->135|1265->180|3433->2320|3462->2321|3503->2335|3603->2408|3631->2409|3661->2412
                   LINES: 33->1|40->8|40->8|40->8|100->68|100->68|102->70|105->73|105->73|106->74
                   -- GENERATED --

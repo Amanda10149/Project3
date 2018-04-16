@@ -23,3 +23,11 @@ exit
 run
 h2-browser
 run
+h2-browser
+run
+h2-browser
+run
+sbt
+run
+exit
+run

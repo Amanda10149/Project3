@@ -74,15 +74,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-home"></a>
+      <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-					<li class="dropdown"><a href="/index">Home</a></li>
+					<li class="dropdown"><a href="/">Home</a></li>
 					<li class="dropdown"><a href="/tv">Televisions</a></li>
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
 					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
-					<li class="dropdown"><a href="/about">About Us</a></li>
+          <li class="dropdown"><a href="/about">About Us</a></li>
+          <li class="dropdown"><a href="/FAQ">FAQ</a></li>
+          <li class="dropdown"><a href="/login">Login</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
@@ -101,12 +103,16 @@
         <div class="panel-body"><img src="/assets/images/iphoneX.jpg" alt="iPhoneX img" class="iPhoneX" style="width:128px;height:128px;" style="height: 13em"></div>
         @for(p <-products) {
           @if(p.getId == 2) {
-<h4>@p.getName </h4>
-<ul>	
-<li>@p.getDescription</li><br>
-
-<li>@p.getStock</li><br>
-<li>@p.getPrice</li><br>
+          <h4>@p.getName </h4>
+          <ul>	
+            <li>@p.getDescription</li><br>
+            <li>@p.getStock</li><br>
+            <li>@p.getPrice</li><br>
+            <td>
+              <a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+                <span class="glyphicon-trash"></span>
+              </a>
+            </td>
               }   
           </ul>
       }   
@@ -123,6 +129,11 @@
           <li>@p.getDescription  </li><br>
           <li>@p.getStock</li><br>
           <li>@p.getPrice</li><br>
+          <td>
+            <a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+              <span class="glyphicon-trash"></span>
+            </a>
+          </td>
           
             }
         </ul>
@@ -141,6 +152,11 @@
         
           <li>@p.getStock</li><br>
           <li>@p.getPrice</li><br>
+          <td>
+            <a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+              <span class="glyphicon-trash"></span>
+            </a>
+          </td>
           
             }
         </ul>
@@ -149,6 +165,7 @@
     </div>
   </div>
 </div>
+
 			</main>
 			
 			<footer>

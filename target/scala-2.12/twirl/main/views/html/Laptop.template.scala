@@ -35,198 +35,182 @@ Seq[Any](format.raw/*1.34*/("""
 
 
 """),format.raw/*5.1*/("""<html>
-	<head>
-		
-		<meta charset="UTF-8">
-		<title>CA2</title>
-		<link rel="stylesheet" type="text/css" href=""""),_display_(/*10.49*/routes/*10.55*/.Assets.versioned("stylesheets/myStyles.css")),format.raw/*10.100*/("""">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-		
-		
-	</head>
 
-	<body>
+<head>
+
+	<meta charset="UTF-8">
+	<title>CA2</title>
+	<link rel="stylesheet" type="text/css" href=""""),_display_(/*11.48*/routes/*11.54*/.Assets.versioned("stylesheets/myStyles.css")),format.raw/*11.99*/("""">
 	
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="/assets/images/sale.jpg" alt="Sale">
-    </div>
-	
-
-    <div class="item">
-      <img src="/assets/images/tv.jpg" alt="TV">
-    </div>
-
-    <div class="item">
-      <img src="/assets/images/iphone.png" alt="iPhone">
-    </div>
-	
-	<div class="item">
-      <img src="/assets/images/laptop.jpg" alt="Macbook">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-    
 
-				
-				<ul id="navbar">
-				<li class="dropdown"><a href="/">Home</a></li>
-					<li class="dropdown"><a href="/tv">Televisions</a></li>
-					<li class="dropdown"><a href="/Phones">Phones</a></li>
-					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
-					<li class="dropdown"><a href="/about">About Us</a></li>
-					<li class="dropdown"><a href="/FAQ">FAQ</a></li>
-				</ul>
-			</header>
-			
-			<main>
-				<div id="columns">
-					<h2>Dell Laptops</h2>
-					<div id="leftCol">
-						<div class="outerColDiv">
-							<div>
-								<div class="productInfo">
-                                    <img src="/assets/images/dell-xps.jpg" alt="xps" class="productImg">
-                                    """),_display_(/*86.38*/for(p <-products) yield /*86.55*/ {_display_(Seq[Any](format.raw/*86.57*/("""
-                                    """),_display_(/*87.38*/if(p.getId == 1)/*87.54*/ {_display_(Seq[Any](format.raw/*87.56*/("""
-									"""),format.raw/*88.10*/("""<h4>"""),_display_(/*88.15*/p/*88.16*/.getName),format.raw/*88.24*/(""" """),format.raw/*88.25*/("""</h4>
-									<ul>	
-										<li>"""),_display_(/*90.16*/p/*90.17*/.getDescription),format.raw/*90.32*/("""</li><br>
-										
-										<li>"""),_display_(/*92.16*/p/*92.17*/.getStock),format.raw/*92.26*/("""</li><br>
-										<li>"""),_display_(/*93.16*/p/*93.17*/.getPrice),format.raw/*93.26*/("""</li><br>
-										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
-										<td>
-											<a href=""""),_display_(/*96.22*/routes/*96.28*/.HomeController.deleteProduct(p.getId)),format.raw/*96.66*/("""" class="button-xs btn-danger" onclick="confirm confirmDel();">
-												<span class="glyphicon-trash"></span>
-											</a>
-										</td>
-                                        """)))}),format.raw/*100.42*/("""   
-                                    """),format.raw/*101.37*/("""</ul>
-                                """)))}),format.raw/*102.34*/("""   
-								"""),format.raw/*103.9*/("""</div>
-								
-				
-								<div class="productInfo">
-									<img src="/assets/images/Alienware.png" alt="Alienware" class="productImg">
-									"""),_display_(/*108.11*/for(p <-products) yield /*108.28*/ {_display_(Seq[Any](format.raw/*108.30*/("""
-										"""),_display_(/*109.12*/if(p.getId == 7)/*109.28*/ {_display_(Seq[Any](format.raw/*109.30*/("""
-									"""),format.raw/*110.10*/("""<h4>"""),_display_(/*110.15*/p/*110.16*/.getName),format.raw/*110.24*/("""</h4>
-									<ul>	
-										<li>"""),_display_(/*112.16*/p/*112.17*/.getDescription),format.raw/*112.32*/("""</li><br>
-									
-										<li>"""),_display_(/*114.16*/p/*114.17*/.getStock),format.raw/*114.26*/("""</li><br>
-										<li>"""),_display_(/*115.16*/p/*115.17*/.getPrice),format.raw/*115.26*/("""</li><br>
-										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
-										<td>
-											<a href=""""),_display_(/*118.22*/routes/*118.28*/.HomeController.deleteProduct(p.getId)),format.raw/*118.66*/("""" class="button-xs btn-danger">
-												<span class="glyphicon-trash"></span>
-											</a>
-										</td>
-											""")))}),format.raw/*122.13*/("""
-									"""),format.raw/*123.10*/("""</ul>
-								""")))}),format.raw/*124.10*/("""
-								"""),format.raw/*125.9*/("""</div>
-							</div>
-						</div>
-					
-					</div>
-					
-					<div id="centreCol">
-						<div class="outerColDiv">
-							<div>
-								<div class="productInfo">
-									<img src="/assets/images/Inspiron.jpg" alt="Inspiron" class="productImg">
-									"""),_display_(/*136.11*/for(p <-products) yield /*136.28*/ {_display_(Seq[Any](format.raw/*136.30*/("""
-										"""),_display_(/*137.12*/if(p.getId == 4)/*137.28*/ {_display_(Seq[Any](format.raw/*137.30*/("""
-									"""),format.raw/*138.10*/("""<h4>"""),_display_(/*138.15*/p/*138.16*/.getName),format.raw/*138.24*/("""</h4>
-									<ul>	
-										<li>"""),_display_(/*140.16*/p/*140.17*/.getDescription),format.raw/*140.32*/("""  """),format.raw/*140.34*/("""</li><br>
-										<li>"""),_display_(/*141.16*/p/*141.17*/.getStock),format.raw/*141.26*/("""</li><br>
-										<li>"""),_display_(/*142.16*/p/*142.17*/.getPrice),format.raw/*142.26*/("""</li><br>
-										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
-										<!-- Deleting the Product-->
-										<td>
-											<a href=""""),_display_(/*146.22*/routes/*146.28*/.HomeController.deleteProduct(p.getId)),format.raw/*146.66*/("""" class="button-xs btn-danger">
-												<span class="glyphicon-trash"></span>
-											</a>
-										</td>
-											""")))}),format.raw/*150.13*/("""
-									"""),format.raw/*151.10*/("""</ul>
-								""")))}),format.raw/*152.10*/("""
-								"""),format.raw/*153.9*/("""</div>
-								
-								<div class="productInfo">
-									<img src="/assets/images/Latitude.jpg" alt="Latitude" class="productImg">
-									"""),_display_(/*157.11*/for(p <-products) yield /*157.28*/ {_display_(Seq[Any](format.raw/*157.30*/("""
-										"""),_display_(/*158.12*/if(p.getId == 3)/*158.28*/ {_display_(Seq[Any](format.raw/*158.30*/("""
-									"""),format.raw/*159.10*/("""<h4>"""),_display_(/*159.15*/p/*159.16*/.getName),format.raw/*159.24*/("""</h4>
-									<ul>
-										<li>"""),_display_(/*161.16*/p/*161.17*/.getDescription),format.raw/*161.32*/("""</li><br>
-										<li>"""),_display_(/*162.16*/p/*162.17*/.getStock),format.raw/*162.26*/("""</li><br>
-										<li>"""),_display_(/*163.16*/p/*163.17*/.getPrice),format.raw/*163.26*/("""</li><br>
-										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
-										<td>
-											<a href=""""),_display_(/*166.22*/routes/*166.28*/.HomeController.deleteProduct(p.getId)),format.raw/*166.66*/("""" class="button-xs btn-danger">
-												<span class="glyphicon-trash"></span>
-											</a>
-										</td>
-											""")))}),format.raw/*170.13*/("""
-									"""),format.raw/*171.10*/("""</ul>
-								""")))}),format.raw/*172.10*/("""
-								"""),format.raw/*173.9*/("""</div>
-							</div>
-						</div>
-					</div>
+</head>
 
-					<p>
-							<a href=""""),_display_(/*179.18*/routes/*179.24*/.HomeController.addProduct()),format.raw/*179.52*/("""">
-								<button class="btn btn-primary">Add a product</button>
-							</a>
-					</p>
-					
-					<div id="bottomCol">
-						<div class="outerColDiv">
-							
-						</div>
-					</div>
-				</div>
-			</main>
-			
-			<footer>
-				Copyright &copy; 2018 
-			</footer>
+<body>
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="/assets/images/sale.jpg" alt="Sale">
+			</div>
+
+
+			<div class="item">
+				<img src="/assets/images/tv.jpg" alt="TV">
+			</div>
+
+			<div class="item">
+				<img src="/assets/images/iphone.png" alt="iPhone">
+			</div>
+
+			<div class="item">
+				<img src="/assets/images/laptop.jpg" alt="Macbook">
+			</div>
 		</div>
-	</body>
-</html>"""))
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></a>
+		  </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				 <li class="dropdown"><a href="/">Home</a></li>
+				 <li class="dropdown"><a href="/tv">Televisions</a></li>
+				 <li class="dropdown"><a href="/Phones">Phones</a></li>
+				 <li class="dropdown"><a href="/Laptop">Laptops</a></li>
+				 <li class="dropdown"><a href="/about">About Us</a></li>
+				 <li class="dropdown"><a href="/FAQ">FAQ</a></li>
+				 <li class="dropdown"><a href="/login">Login</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+			  <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+
+
+	<main>
+		<div class="container">    
+			<div class="row">
+			  <div class="col-sm-4">
+				<div class="panel panel-primary">
+				  <div class="panel-heading">Dell</div>
+				  <div class="panel-body"><img src="/assets/images/dell-xps.jpg" alt="Alienware" class="productImg" style="height: 13em"></div>
+				  """),_display_(/*105.8*/for(p <-products) yield /*105.25*/ {_display_(Seq[Any](format.raw/*105.27*/("""
+					"""),_display_(/*106.7*/if(p.getId == 1)/*106.23*/ {_display_(Seq[Any](format.raw/*106.25*/("""
+				  """),format.raw/*107.7*/("""<h4>"""),_display_(/*107.12*/p/*107.13*/.getName),format.raw/*107.21*/("""</h4>
+				  <ul>	
+					<li>"""),_display_(/*109.11*/p/*109.12*/.getDescription),format.raw/*109.27*/("""</li><br>
+					<li>"""),_display_(/*110.11*/p/*110.12*/.getStock),format.raw/*110.21*/("""</li><br>
+					<li>"""),_display_(/*111.11*/p/*111.12*/.getPrice),format.raw/*111.21*/("""</li><br>
+					<td>
+						<a href=""""),_display_(/*113.17*/routes/*113.23*/.HomeController.deleteProduct(p.getId)),format.raw/*113.61*/("""" class="button-xs btn-danger">
+							<span class="glyphicon-trash"></span>
+						</a>
+					</td>
+					
+					  """)))}),format.raw/*118.9*/("""
+				  """),format.raw/*119.7*/("""</ul>
+					""")))}),format.raw/*120.7*/("""
+				"""),format.raw/*121.5*/("""</div>
+			  </div>
+			  <div class="col-sm-4"> 
+				<div class="panel panel-danger">
+				  <div class="panel-heading">Alienware</div>
+				  <div class="panel-body"><img src="/assets/images/Alienware.png" alt="Alienware" class="productImg" style="height: 13em"></div>
+				  """),_display_(/*127.8*/for(p <-products) yield /*127.25*/ {_display_(Seq[Any](format.raw/*127.27*/("""
+					"""),_display_(/*128.7*/if(p.getId == 7)/*128.23*/ {_display_(Seq[Any](format.raw/*128.25*/("""
+				  """),format.raw/*129.7*/("""<h4>"""),_display_(/*129.12*/p/*129.13*/.getName),format.raw/*129.21*/("""</h4>
+				  <ul>	
+					<li>"""),_display_(/*131.11*/p/*131.12*/.getDescription),format.raw/*131.27*/("""</li><br>
+					<li>"""),_display_(/*132.11*/p/*132.12*/.getStock),format.raw/*132.21*/("""</li><br>
+					<li>"""),_display_(/*133.11*/p/*133.12*/.getPrice),format.raw/*133.21*/("""</li><br>
+					<td>
+						<a href=""""),_display_(/*135.17*/routes/*135.23*/.HomeController.deleteProduct(p.getId)),format.raw/*135.61*/("""" class="button-xs btn-danger">
+							<span class="glyphicon-trash"></span>
+						</a>
+					</td>
+					
+					  """)))}),format.raw/*140.9*/("""
+				  """),format.raw/*141.7*/("""</ul>
+					""")))}),format.raw/*142.7*/("""
+				"""),format.raw/*143.5*/("""</div>
+			  </div>
+			  <div class="col-sm-4"> 
+				<div class="panel panel-success">
+				  <div class="panel-heading">Inspirion</div>
+				  <div class="panel-body"><img src="/assets/images/Inspiron.jpg" alt="Inspiron" class="productImg" style="height: 13em;"></div>
+				  """),_display_(/*149.8*/for(p <-products) yield /*149.25*/ {_display_(Seq[Any](format.raw/*149.27*/("""
+					"""),_display_(/*150.7*/if(p.getId == 4)/*150.23*/ {_display_(Seq[Any](format.raw/*150.25*/("""
+				  """),format.raw/*151.7*/("""<h4>"""),_display_(/*151.12*/p/*151.13*/.getName),format.raw/*151.21*/("""</h4>
+				  <ul>	
+					<li>"""),_display_(/*153.11*/p/*153.12*/.getDescription),format.raw/*153.27*/("""</li><br>
+					<li>"""),_display_(/*154.11*/p/*154.12*/.getStock),format.raw/*154.21*/("""</li><br>
+					<li>"""),_display_(/*155.11*/p/*155.12*/.getPrice),format.raw/*155.21*/("""</li><br>
+					<td>
+						<a href=""""),_display_(/*157.17*/routes/*157.23*/.HomeController.deleteProduct(p.getId)),format.raw/*157.61*/("""" class="button-xs btn-danger">
+							<span class="glyphicon-trash"></span>
+						</a>
+					</td>
+					
+					  """)))}),format.raw/*162.9*/("""
+				  """),format.raw/*163.7*/("""</ul>
+					""")))}),format.raw/*164.7*/("""
+				"""),format.raw/*165.5*/("""</div>
+			  </div>
+			</div>
+			</div>
+			<p>
+				<a href=""""),_display_(/*170.15*/routes/*170.21*/.HomeController.addProduct()),format.raw/*170.49*/("""">
+					<button class="btn btn-primary">Add a product</button>
+				</a>
+			</p>
+					  </main>
+						  
+					  <footer>
+						  Copyright &copy; 2018
+					  </footer>
+				  </div>
+			  </body>
+		  </html>"""))
       }
     }
   }
@@ -242,11 +226,11 @@ Seq[Any](format.raw/*1.34*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 17:43:51 IST 2018
+                  DATE: Mon Apr 16 20:48:06 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/Laptop.scala.html
-                  HASH: efad70eedd4fb610e25f78a94ef74d0a78299f43
-                  MATRIX: 963->1|1090->33|1120->37|1259->149|1274->155|1341->200|3831->2663|3864->2680|3904->2682|3969->2720|3994->2736|4034->2738|4072->2748|4104->2753|4114->2754|4143->2762|4172->2763|4235->2799|4245->2800|4281->2815|4344->2851|4354->2852|4384->2861|4436->2886|4446->2887|4476->2896|4624->3017|4639->3023|4698->3061|4917->3248|4986->3288|5057->3327|5097->3339|5275->3489|5309->3506|5350->3508|5390->3520|5416->3536|5457->3538|5496->3548|5529->3553|5540->3554|5570->3562|5634->3598|5645->3599|5682->3614|5745->3649|5756->3650|5787->3659|5840->3684|5851->3685|5882->3694|6031->3815|6047->3821|6107->3859|6265->3985|6304->3995|6351->4010|6388->4019|6672->4275|6706->4292|6747->4294|6787->4306|6813->4322|6854->4324|6893->4334|6926->4339|6937->4340|6967->4348|7031->4384|7042->4385|7079->4400|7110->4402|7163->4427|7174->4428|7205->4437|7258->4462|7269->4463|7300->4472|7488->4632|7504->4638|7564->4676|7722->4802|7761->4812|7808->4827|7845->4836|8016->4979|8050->4996|8091->4998|8131->5010|8157->5026|8198->5028|8237->5038|8270->5043|8281->5044|8311->5052|8374->5087|8385->5088|8422->5103|8475->5128|8486->5129|8517->5138|8570->5163|8581->5164|8612->5173|8761->5294|8777->5300|8837->5338|8995->5464|9034->5474|9081->5489|9118->5498|9219->5571|9235->5577|9285->5605
-                  LINES: 28->1|33->1|37->5|42->10|42->10|42->10|118->86|118->86|118->86|119->87|119->87|119->87|120->88|120->88|120->88|120->88|120->88|122->90|122->90|122->90|124->92|124->92|124->92|125->93|125->93|125->93|128->96|128->96|128->96|132->100|133->101|134->102|135->103|140->108|140->108|140->108|141->109|141->109|141->109|142->110|142->110|142->110|142->110|144->112|144->112|144->112|146->114|146->114|146->114|147->115|147->115|147->115|150->118|150->118|150->118|154->122|155->123|156->124|157->125|168->136|168->136|168->136|169->137|169->137|169->137|170->138|170->138|170->138|170->138|172->140|172->140|172->140|172->140|173->141|173->141|173->141|174->142|174->142|174->142|178->146|178->146|178->146|182->150|183->151|184->152|185->153|189->157|189->157|189->157|190->158|190->158|190->158|191->159|191->159|191->159|191->159|193->161|193->161|193->161|194->162|194->162|194->162|195->163|195->163|195->163|198->166|198->166|198->166|202->170|203->171|204->172|205->173|211->179|211->179|211->179
+                  HASH: c819ed05182a5dca4bfaabceced965d1dc708632
+                  MATRIX: 963->1|1090->33|1120->37|1254->144|1269->150|1335->195|4928->3761|4962->3778|5003->3780|5037->3787|5063->3803|5104->3805|5139->3812|5172->3817|5183->3818|5213->3826|5269->3854|5280->3855|5317->3870|5365->3890|5376->3891|5407->3900|5455->3920|5466->3921|5497->3930|5561->3966|5577->3972|5637->4010|5781->4123|5816->4130|5859->4142|5892->4147|6193->4421|6227->4438|6268->4440|6302->4447|6328->4463|6369->4465|6404->4472|6437->4477|6448->4478|6478->4486|6534->4514|6545->4515|6582->4530|6630->4550|6641->4551|6672->4560|6720->4580|6731->4581|6762->4590|6826->4626|6842->4632|6902->4670|7046->4783|7081->4790|7124->4802|7157->4807|7458->5081|7492->5098|7533->5100|7567->5107|7593->5123|7634->5125|7669->5132|7702->5137|7713->5138|7743->5146|7799->5174|7810->5175|7847->5190|7895->5210|7906->5211|7937->5220|7985->5240|7996->5241|8027->5250|8091->5286|8107->5292|8167->5330|8311->5443|8346->5450|8389->5462|8422->5467|8510->5527|8526->5533|8576->5561
+                  LINES: 28->1|33->1|37->5|43->11|43->11|43->11|137->105|137->105|137->105|138->106|138->106|138->106|139->107|139->107|139->107|139->107|141->109|141->109|141->109|142->110|142->110|142->110|143->111|143->111|143->111|145->113|145->113|145->113|150->118|151->119|152->120|153->121|159->127|159->127|159->127|160->128|160->128|160->128|161->129|161->129|161->129|161->129|163->131|163->131|163->131|164->132|164->132|164->132|165->133|165->133|165->133|167->135|167->135|167->135|172->140|173->141|174->142|175->143|181->149|181->149|181->149|182->150|182->150|182->150|183->151|183->151|183->151|183->151|185->153|185->153|185->153|186->154|186->154|186->154|187->155|187->155|187->155|189->157|189->157|189->157|194->162|195->163|196->164|197->165|202->170|202->170|202->170
                   -- GENERATED --
               */
           
