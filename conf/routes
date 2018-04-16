@@ -5,7 +5,7 @@
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index()
 
-GET     /subscribe                       controllers.HomeController.subscribe() 
+GET     /FAQ                             controllers.HomeController.FAQ() 
 GET     /about                           controllers.HomeController.about()
 GET     /Phones                          controllers.HomeController.Phones()
 GET     /tv                              controllers.HomeController.tv()

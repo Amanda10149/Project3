@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
 
+
+
 import models.*;
 
 import views.*;
@@ -20,12 +22,15 @@ import views.*;
  */
 public class HomeController extends Controller {
 
-    /**
-     * An action that renders an HTML page with a welcome message.
-     * The configuration in the <code>routes</code> file means that
-     * this method will be called when the application receives a
-     * <code>GET</code> request with a path of <code>/</code>.
-     */
+    
+    private FormFactory formFactory;
+
+    @Inject
+    public HomeController(FormFactory f) {
+        this.formFactory = f;
+    }
+    
+   
 
     public Result index() {
         
@@ -59,20 +64,63 @@ public class HomeController extends Controller {
 
     }
 
-    public Result subscribe() {
+    public Result FAQ() {
         
         List<Product> productList = Product.findAll();
 
-        return ok(views.html.subscribe.render(productList));
+        return ok(views.html.FAQ.render(productList));
 
     }
 
 
-    public Result pc() {
+    public Result Laptop() {
 
         List<Product> productList = Product.findAll();
 
         return ok(views.html.Laptop.render(productList));
+    }
+
+    
+    public Result addProduct() {
+        
+
+        Form<Product> productForm = formFactory.form(Product.class);
+
+        return ok(views.html.addProduct.render(productForm));
+
+    }
+
+    public Result addProductSubmit() {
+
+        Form<Product> newProductForm = formFactory.form(Product.class).bindFromRequest();
+
+        if (newProductForm.hasErrors()) {
+            return badRequest(views.html.addProduct.render(newProductForm));
+
+        }else {
+            Product newProduct = newProductForm.get();
+
+            newProduct.save();
+            
+            flash("success", "Product "+ newProduct.getName() + "was added");
+
+            return redirect(controllers.routes.HomeController.Laptop());
+            
+        
+        }
+    }
+
+    public Result deleteProduct(Long id){
+    
+    
+        Product.find.ref(id).delete();
+
+        flash("success", "Product has been deleted");
+
+        return redirect(routes.HomeController.Laptop());
+
+    
+        
     }
 
 }

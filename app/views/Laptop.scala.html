@@ -75,9 +75,9 @@
 				<li class="dropdown"><a href="/">Home</a></li>
 					<li class="dropdown"><a href="/tv">Televisions</a></li>
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
-					<li class="dropdown"><a href="/pc">Laptops</a></li>
+					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
 					<li class="dropdown"><a href="/about">About Us</a></li>
-					<li class="dropdown"><a href="/subscribe">Subscribe</a></li>
+					<li class="dropdown"><a href="/FAQ">FAQ</a></li>
 				</ul>
 			</header>
 			
@@ -97,12 +97,18 @@
 										
 										<li>@p.getStock</li><br>
 										<li>@p.getPrice</li><br>
-                    <li><a href="#" class="moreInfoBtn">Click for more info</a></li>
+										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
+										<td>
+											<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger" onclick="confirm confirmDel();">
+												<span class="glyphicon-trash"></span>
+											</a>
+										</td>
                                         }   
                                     </ul>
                                 }   
 								</div>
 								
+				
 								<div class="productInfo">
 									<img src="/assets/images/Alienware.png" alt="Alienware" class="productImg">
 									@for(p <-products) {
@@ -114,6 +120,11 @@
 										<li>@p.getStock</li><br>
 										<li>@p.getPrice</li><br>
 										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
+										<td>
+											<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+												<span class="glyphicon-trash"></span>
+											</a>
+										</td>
 											}
 									</ul>
 								}
@@ -136,6 +147,12 @@
 										<li>@p.getStock</li><br>
 										<li>@p.getPrice</li><br>
 										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
+										<!-- Deleting the Product-->
+										<td>
+											<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+												<span class="glyphicon-trash"></span>
+											</a>
+										</td>
 											}
 									</ul>
 								}
@@ -151,6 +168,11 @@
 										<li>@p.getStock</li><br>
 										<li>@p.getPrice</li><br>
 										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
+										<td>
+											<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+												<span class="glyphicon-trash"></span>
+											</a>
+										</td>
 											}
 									</ul>
 								}
@@ -158,6 +180,12 @@
 							</div>
 						</div>
 					</div>
+
+					<p>
+							<a href="@routes.HomeController.addProduct()">
+								<button class="btn btn-primary">Add a product</button>
+							</a>
+					</p>
 					
 					<div id="bottomCol">
 						<div class="outerColDiv">
@@ -168,7 +196,7 @@
 			</main>
 			
 			<footer>
-				Copyright &copy; 2016 
+				Copyright &copy; 2018 
 			</footer>
 		</div>
 	</body>
