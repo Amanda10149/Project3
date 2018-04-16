@@ -43,44 +43,86 @@ Seq[Any](format.raw/*1.32*/("""
 <title>Online Shop - """),_display_(/*11.23*/title),format.raw/*11.28*/("""</title>
 
 <!-- Bootstrap Core CSS -->
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" />
 
-<!-- Custom CSS --> <link href=""""),_display_(/*17.34*/routes/*17.40*/.Assets.versioned("stylesheets/main.css")),format.raw/*17.81*/("""" rel="stylesheet" />
 
+<!-- Custom CSS --> 
+<link rel="stylesheet" type="text/css" href=""""),_display_(/*24.47*/routes/*24.53*/.Assets.versioned("stylesheets/myStyles.css")),format.raw/*24.98*/("""">
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+         <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="/assets/images/sale.jpg" alt="Sale">
+          </div>
+          
+      
+          <div class="item">
+            <img src="/assets/images/tv.jpg" alt="TV">
+          </div>
+      
+          <div class="item">
+            <img src="/assets/images/iphone.png" alt="iPhone">
+          </div>
+          
+          <div class="item">
+            <img src="/assets/images/laptop.jpg" alt="Macbook">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
-<div class="container-fluid">
-
-<div class="navbar-header">
-
-<a class="navbar-brand" href="#">Online Shop</a>
-
-</div>
-
-<ul class="nav navbar-nav">
-<li """),_display_(/*34.6*/if(title=="Products")/*34.27*/{_display_(Seq[Any](format.raw/*34.28*/("""class="active"""")))}),format.raw/*34.43*/(""">
-    <a href=""""),_display_(/*35.15*/routes/*35.21*/.HomeController.index()),format.raw/*35.44*/("""">Products</a>
-</li>
-
-<li class="active"><a href="#">About</a></li>
-
-<li><a href="#">Services</a></li>
-
-<li><a href="#">Contact</a></li>
-<li """),_display_(/*43.6*/if(title=="Login")/*43.24*/{_display_(Seq[Any](format.raw/*43.25*/("""class="active"""")))}),format.raw/*43.40*/(""">
-    <a href=""""),_display_(/*44.15*/routes/*44.21*/.LoginController.login()),format.raw/*44.45*/("""">Login</a>
-</li>
-
-</ul>
-
-</div>
-
-</nav>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-home"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                          <li class="dropdown"><a href="/">Home</a></li>
+                          <li class="dropdown"><a href="/tv">Televisions</a></li>
+                          <li class="dropdown"><a href="/Phones">Phones</a></li>
+                          <li class="dropdown"><a href="/Laptop">Laptops</a></li>
+                <li class="dropdown"><a href="/about">About Us</a></li>
+                <li class="dropdown"><a href="/login">login</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
 <container>
 
@@ -88,9 +130,9 @@ Seq[Any](format.raw/*1.32*/("""
 
 <div class="col-md-12">
 
-"""),_display_(/*59.2*/content),format.raw/*59.9*/("""
+"""),_display_(/*101.2*/content),format.raw/*101.9*/("""
 
-"""),format.raw/*61.1*/("""</div>
+"""),format.raw/*103.1*/("""</div>
 
 </div>
 
@@ -128,11 +170,11 @@ Copyright <strong>Online Shop</strong>
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 15:49:44 IST 2018
+                  DATE: Mon Apr 16 17:47:10 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/main.scala.html
-                  HASH: fa101c1370c63dc756714f991602bba5b69043e5
-                  MATRIX: 952->1|1077->31|1105->33|1221->122|1247->127|1446->299|1461->305|1523->346|1777->574|1807->595|1846->596|1892->611|1935->627|1950->633|1994->656|2162->798|2189->816|2228->817|2274->832|2317->848|2332->854|2377->878|2503->978|2530->985|2559->987
-                  LINES: 28->1|33->1|35->3|43->11|43->11|49->17|49->17|49->17|66->34|66->34|66->34|66->34|67->35|67->35|67->35|75->43|75->43|75->43|75->43|76->44|76->44|76->44|91->59|91->59|93->61
+                  HASH: 8253bae5de5040f268878c4875011deac8003c9d
+                  MATRIX: 952->1|1077->31|1105->33|1221->122|1247->127|2021->874|2036->880|2102->925|5017->3813|5045->3820|5075->3822
+                  LINES: 28->1|33->1|35->3|43->11|43->11|56->24|56->24|56->24|133->101|133->101|135->103
                   -- GENERATED --
               */
           

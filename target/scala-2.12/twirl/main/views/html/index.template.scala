@@ -45,13 +45,17 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
 		
 		
 	</head>
 
 	<body>
-	
+
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -82,7 +86,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 	
   </div>
 
-  <!-- Left and right controls -->
+<!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
@@ -92,75 +96,72 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
     <span class="sr-only">Next</span>
   </a>
 </div>
-<style>
-.carousel-inner img """),format.raw/*64.21*/("""{"""),format.raw/*64.22*/("""
-      
-      """),format.raw/*66.7*/("""width: 50%; /* Set width to 100% */
-      margin: auto;
-	  height:50%;
-  """),format.raw/*69.3*/("""}"""),format.raw/*69.4*/("""
-  """),format.raw/*70.3*/("""</style>
-    
 
-				
-				<ul id="navbar">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-home"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
 					<li class="dropdown"><a href="/">Home</a></li>
 					<li class="dropdown"><a href="/tv">Televisions</a></li>
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
 					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
-					<li class="dropdown"><a href="/about">About Us</a></li>
-          <li class="dropdown"><a href="/subscribe">Subscribe</a></li>
-          <li class="dropdown"><a href="/login">Login</a></li>
-				</ul>
-			</header>
+          <li class="dropdown"><a href="/about">About Us</a></li>
+          <li class="dropdown"><a href="/login">login</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-			<main>
-				<style>
-table, th, td """),format.raw/*87.15*/("""{"""),format.raw/*87.16*/("""
-    """),format.raw/*88.5*/("""border: 1px solid black;
-    border-collapse: collapse;
-"""),format.raw/*90.1*/("""}"""),format.raw/*90.2*/("""
-"""),format.raw/*91.1*/("""th, td """),format.raw/*91.8*/("""{"""),format.raw/*91.9*/("""
-    """),format.raw/*92.5*/("""padding: 5px;
-    text-align: left;
-"""),format.raw/*94.1*/("""}"""),format.raw/*94.2*/("""
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Best selling laptop!</div>
+        <div class="panel-body"><img src="/assets/images/Inspiron.jpg" alt="Inspiron" class="productImg" style="height: 13em"></div>
+        <div class="panel-footer">Dell inspiron</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Low Prices on iPhones!</div>
+        <div class="panel-body"><img src="/assets/images/iphoneX.jpg" alt="iPhoneX img" class="iPhoneX" style="height: 13em"></div>
+        <div class="panel-footer">New iPhone X only 999!</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Limited sales on selected TVs!</div>
+        <div class="panel-body"><img src="/assets/images/SamsungTV-img3.jpg" alt="49' Samsung Smart TV" class="productImg" style="height: 13em"></div>
+        <div class="panel-footer">Save over $200</div>
+      </div>
+    </div>
+  </div>
+</div><br>
 
+<footer class="container-fluid text-center">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
 
-"""),format.raw/*97.1*/("""</style>
-</head>
-<body>
-
-<table id="t01" style="width:50%" >
- 
-  <tr>
-    <th><img src="/assets/images/t-laptop.PNG" alt="32' laptop" class="productImg" style=";"></th>
-    <th><img src="/assets/images/t-laptop1.PNG" alt="32' LG TV" class="productImg" style=""></th>
-  </tr>
-  <tr>
-    <th><img src="/assets/images/t-laptop2.PNG" alt="32' LG TV" class="productImg" style=""></th>
-    <th><img src="/assets/images/t-tablet.PNG" alt="32' LG TV" class="productImg" style=""></th>
-  </tr>
-  <tr>
-    <th><img src="/assets/images/t-tv.PNG" alt="32' LG TV" class="productImg" style=""></th>
-    <th><img src="/assets/images/t-laptop1.PNG" alt="32' LG TV" class="productImg" style=""></th>
-  </tr>
-</table>
-
-<map name="facebook" id="facebook">
-		<area href="https://www.facebook.com/" shape="circle" coords="100, 80,80,50" alt="fb"/>
-		<area href="https://twitter.com/" shape="circle" coords="300, 80,80,80" alt="tw"/>
-		<area href="https://www.instagram.com/" shape="circle" coords="500, 80,80,50" alt="in"/>
-		</map>
-		<img src="/assets/images/follow.png" usemap="#facebook" alt"wh"width="570" height="200"/>
-			</main>
-			
-			
-			<footer>
-				Copyright &copy; 2017
-			</footer>
-		</div>
-	</body>
-</html>"""))
+</body>
+</html>
+"""))
       }
     }
   }
@@ -176,11 +177,11 @@ table, th, td """),format.raw/*87.15*/("""{"""),format.raw/*87.16*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 15:49:44 IST 2018
+                  DATE: Mon Apr 16 17:41:42 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/index.scala.html
-                  HASH: 22ceac053f9f198a1814919a3ccb8b1533df263d
-                  MATRIX: 1030->0|1185->129|1199->135|1265->180|3075->1962|3104->1963|3145->1977|3245->2050|3273->2051|3303->2054|3861->2584|3890->2585|3922->2590|4005->2646|4033->2647|4061->2648|4095->2655|4123->2656|4155->2661|4218->2697|4246->2698|4276->2701
-                  LINES: 33->1|40->8|40->8|40->8|96->64|96->64|98->66|101->69|101->69|102->70|119->87|119->87|120->88|122->90|122->90|123->91|123->91|123->91|124->92|126->94|126->94|129->97
+                  HASH: ec593ffbb500495fd05a65daab0830f4f51bc519
+                  MATRIX: 1030->0|1185->129|1199->135|1265->180
+                  LINES: 33->1|40->8|40->8|40->8
                   -- GENERATED --
               */
           

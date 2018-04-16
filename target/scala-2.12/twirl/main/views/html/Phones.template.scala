@@ -45,13 +45,17 @@ Seq[Any](format.raw/*1.34*/("""
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
 		
 		
 	</head>
 
 	<body>
-	
+
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -60,7 +64,7 @@ Seq[Any](format.raw/*1.34*/("""
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
 
-   <!-- Wrapper for slides -->
+  <!-- Wrapper for slides -->
     <div class="carousel-inner">
     <div class="item active">
       <img src="/assets/images/sale.jpg" alt="Sale">
@@ -78,9 +82,11 @@ Seq[Any](format.raw/*1.34*/("""
 	<div class="item">
       <img src="/assets/images/laptop.jpg" alt="Macbook">
     </div>
+	
+	
   </div>
 
-  <!-- Left and right controls -->
+<!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
@@ -90,101 +96,95 @@ Seq[Any](format.raw/*1.34*/("""
     <span class="sr-only">Next</span>
   </a>
 </div>
-<style>
-.carousel-inner img """),format.raw/*62.21*/("""{"""),format.raw/*62.22*/("""
-      
-      """),format.raw/*64.7*/("""width: 50%; /* Set width to 100% */
-      margin: auto;
-	  height:50%;
-  """),format.raw/*67.3*/("""}"""),format.raw/*67.4*/("""
-  """),format.raw/*68.3*/("""</style>
-    
 
-				
-				<ul id="navbar">
-				<li class="dropdown"><a href="/">Home</a></li>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-home"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+					<li class="dropdown"><a href="/index">Home</a></li>
 					<li class="dropdown"><a href="/tv">Televisions</a></li>
 					<li class="dropdown"><a href="/Phones">Phones</a></li>
 					<li class="dropdown"><a href="/Laptop">Laptops</a></li>
 					<li class="dropdown"><a href="/about">About Us</a></li>
-					<li class="dropdown"><a href="/subscribe">Subscribe</a></li>
-				</ul>
-			</header>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 			
-			4<main>
-				<div id="columns">
-					<h2>Dell Laptops</h2>
-					<div id="leftCol">
-						<div class="outerColDiv">
-							<div>
-								<div class="productInfo">
-                                    <img src="/assets/images/iphoneX.jpg" alt="IPHX" class="productImg">
-                                    """),_display_(/*90.38*/for(p <-products) yield /*90.55*/ {_display_(Seq[Any](format.raw/*90.57*/("""
-                                    """),_display_(/*91.38*/if(p.getId == 2)/*91.54*/ {_display_(Seq[Any](format.raw/*91.56*/("""
-									"""),format.raw/*92.10*/("""<h4>"""),_display_(/*92.15*/p/*92.16*/.getName),format.raw/*92.24*/(""" """),format.raw/*92.25*/("""</h4>
-									<ul>	
-										<li>"""),_display_(/*94.16*/p/*94.17*/.getDescription),format.raw/*94.32*/("""</li><br>
-										
-										<li>"""),_display_(/*96.16*/p/*96.17*/.getStock),format.raw/*96.26*/("""</li><br>
-										<li>"""),_display_(/*97.16*/p/*97.17*/.getPrice),format.raw/*97.26*/("""</li><br>
-                    <li><a href="#" class="moreInfoBtn">Click for more info</a></li>
-                                        """)))}),format.raw/*99.42*/("""   
-                                    """),format.raw/*100.37*/("""</ul>
-                                """)))}),format.raw/*101.34*/("""   
-								"""),format.raw/*102.9*/("""</div>
-								
-								<div class="productInfo">
-									<img src="/assets/images/iphone6.jpg" alt="IPH6" class="productImg">
-									"""),_display_(/*106.11*/for(p <-products) yield /*106.28*/ {_display_(Seq[Any](format.raw/*106.30*/("""
-										"""),_display_(/*107.12*/if(p.getId == 5)/*107.28*/ {_display_(Seq[Any](format.raw/*107.30*/("""
-									"""),format.raw/*108.10*/("""<h4>"""),_display_(/*108.15*/p/*108.16*/.getName),format.raw/*108.24*/("""</h4>
-									<ul>	
-										<li>"""),_display_(/*110.16*/p/*110.17*/.getDescription),format.raw/*110.32*/("""</li><br>
-									
-										<li>"""),_display_(/*112.16*/p/*112.17*/.getStock),format.raw/*112.26*/("""</li><br>
-										<li>"""),_display_(/*113.16*/p/*113.17*/.getPrice),format.raw/*113.26*/("""</li><br>
-										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
-											""")))}),format.raw/*115.13*/("""
-									"""),format.raw/*116.10*/("""</ul>
-								""")))}),format.raw/*117.10*/("""
-								"""),format.raw/*118.9*/("""</div>
-							</div>
-						</div>
-					
-					</div>
-					
-					<div id="centreCol">
-						<div class="outerColDiv">
-							<div>
-								<div class="productInfo">
-									<img src="/assets/images/iphone7.jpg" alt="IPH7" class="productImg">
-									"""),_display_(/*129.11*/for(p <-products) yield /*129.28*/ {_display_(Seq[Any](format.raw/*129.30*/("""
-										"""),_display_(/*130.12*/if(p.getId == 8)/*130.28*/ {_display_(Seq[Any](format.raw/*130.30*/("""
-									"""),format.raw/*131.10*/("""<h4>"""),_display_(/*131.15*/p/*131.16*/.getName),format.raw/*131.24*/("""</h4>
-									<ul>	
-										<li>"""),_display_(/*133.16*/p/*133.17*/.getDescription),format.raw/*133.32*/("""  """),format.raw/*133.34*/("""</li><br>
-										<li>"""),_display_(/*134.16*/p/*134.17*/.getStock),format.raw/*134.26*/("""</li><br>
-										<li>"""),_display_(/*135.16*/p/*135.17*/.getPrice),format.raw/*135.26*/("""</li><br>
-										<li><a href="#" class="moreInfoBtn">Click for more info</a></li>
-											""")))}),format.raw/*137.13*/("""
-									"""),format.raw/*138.10*/("""</ul>
-								""")))}),format.raw/*139.10*/("""
-								"""),format.raw/*140.9*/("""</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div id="bottomCol">
-						<div class="outerColDiv">
-							
-						</div>
-					</div>
-				</div>
+			<main>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">iPhone X</div>
+        <div class="panel-body"><img src="/assets/images/iphoneX.jpg" alt="iPhoneX img" class="iPhoneX" style="width:128px;height:128px;" style="height: 13em"></div>
+        """),_display_(/*102.10*/for(p <-products) yield /*102.27*/ {_display_(Seq[Any](format.raw/*102.29*/("""
+          """),_display_(/*103.12*/if(p.getId == 2)/*103.28*/ {_display_(Seq[Any](format.raw/*103.30*/("""
+"""),format.raw/*104.1*/("""<h4>"""),_display_(/*104.6*/p/*104.7*/.getName),format.raw/*104.15*/(""" """),format.raw/*104.16*/("""</h4>
+<ul>	
+<li>"""),_display_(/*106.6*/p/*106.7*/.getDescription),format.raw/*106.22*/("""</li><br>
+
+<li>"""),_display_(/*108.6*/p/*108.7*/.getStock),format.raw/*108.16*/("""</li><br>
+<li>"""),_display_(/*109.6*/p/*109.7*/.getPrice),format.raw/*109.16*/("""</li><br>
+              """)))}),format.raw/*110.16*/("""   
+          """),format.raw/*111.11*/("""</ul>
+      """)))}),format.raw/*112.8*/("""   
+      """),format.raw/*113.7*/("""</div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">iPhone 7</div>
+        <div class="panel-body"><img src="/assets/images/iphone7.jpg" alt="32' LG TV" class="productImg" style="width:128px;height:128px;" style="height: 13em"></div>
+        """),_display_(/*119.10*/for(p <-products) yield /*119.27*/ {_display_(Seq[Any](format.raw/*119.29*/("""
+          """),_display_(/*120.12*/if(p.getId == 8)/*120.28*/ {_display_(Seq[Any](format.raw/*120.30*/("""
+        """),format.raw/*121.9*/("""<h4>"""),_display_(/*121.14*/p/*121.15*/.getName),format.raw/*121.23*/("""</h4>
+        <ul>	
+          <li>"""),_display_(/*123.16*/p/*123.17*/.getDescription),format.raw/*123.32*/("""  """),format.raw/*123.34*/("""</li><br>
+          <li>"""),_display_(/*124.16*/p/*124.17*/.getStock),format.raw/*124.26*/("""</li><br>
+          <li>"""),_display_(/*125.16*/p/*125.17*/.getPrice),format.raw/*125.26*/("""</li><br>
+          
+            """)))}),format.raw/*127.14*/("""
+        """),format.raw/*128.9*/("""</ul>
+      """)))}),format.raw/*129.8*/("""
+      """),format.raw/*130.7*/("""</div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">iPhone 6</div>
+        <div class="panel-body"><img src="/assets/images/iphone6.jpg" alt="32' LG TV" class="productImg" style="width:128px;height:128px;" style="height: 13em"></div>
+        """),_display_(/*136.10*/for(p <-products) yield /*136.27*/ {_display_(Seq[Any](format.raw/*136.29*/("""
+          """),_display_(/*137.12*/if(p.getId == 5)/*137.28*/ {_display_(Seq[Any](format.raw/*137.30*/("""
+        """),format.raw/*138.9*/("""<h4>"""),_display_(/*138.14*/p/*138.15*/.getName),format.raw/*138.23*/("""</h4>
+        <ul>	
+          <li>"""),_display_(/*140.16*/p/*140.17*/.getDescription),format.raw/*140.32*/("""</li><br>
+        
+          <li>"""),_display_(/*142.16*/p/*142.17*/.getStock),format.raw/*142.26*/("""</li><br>
+          <li>"""),_display_(/*143.16*/p/*143.17*/.getPrice),format.raw/*143.26*/("""</li><br>
+          
+            """)))}),format.raw/*145.14*/("""
+        """),format.raw/*146.9*/("""</ul>
+      """)))}),format.raw/*147.8*/("""
+      """),format.raw/*148.7*/("""</div>
+    </div>
+  </div>
+</div>
 			</main>
 			
 			<footer>
-				Copyright &copy; 2016 
+				Copyright &copy; 2018
 			</footer>
 		</div>
 	</body>
@@ -204,11 +204,11 @@ Seq[Any](format.raw/*1.34*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 15:49:44 IST 2018
+                  DATE: Mon Apr 16 17:41:42 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/Phones.scala.html
-                  HASH: c73d225c82a539b06059bd8cdb5be35ef96dce0d
-                  MATRIX: 963->1|1090->33|1118->35|1256->147|1270->153|1336->198|3143->1977|3172->1978|3213->1992|3313->2065|3341->2066|3371->2069|4132->2803|4165->2820|4205->2822|4270->2860|4295->2876|4335->2878|4373->2888|4405->2893|4415->2894|4444->2902|4473->2903|4536->2939|4546->2940|4582->2955|4645->2991|4655->2992|4685->3001|4737->3026|4747->3027|4777->3036|4944->3172|5013->3212|5084->3251|5124->3263|5290->3401|5324->3418|5365->3420|5405->3432|5431->3448|5472->3450|5511->3460|5544->3465|5555->3466|5585->3474|5649->3510|5660->3511|5697->3526|5760->3561|5771->3562|5802->3571|5855->3596|5866->3597|5897->3606|6026->3703|6065->3713|6112->3728|6149->3737|6428->3988|6462->4005|6503->4007|6543->4019|6569->4035|6610->4037|6649->4047|6682->4052|6693->4053|6723->4061|6787->4097|6798->4098|6835->4113|6866->4115|6919->4140|6930->4141|6961->4150|7014->4175|7025->4176|7056->4185|7185->4282|7224->4292|7271->4307|7308->4316
-                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|94->62|94->62|96->64|99->67|99->67|100->68|122->90|122->90|122->90|123->91|123->91|123->91|124->92|124->92|124->92|124->92|124->92|126->94|126->94|126->94|128->96|128->96|128->96|129->97|129->97|129->97|131->99|132->100|133->101|134->102|138->106|138->106|138->106|139->107|139->107|139->107|140->108|140->108|140->108|140->108|142->110|142->110|142->110|144->112|144->112|144->112|145->113|145->113|145->113|147->115|148->116|149->117|150->118|161->129|161->129|161->129|162->130|162->130|162->130|163->131|163->131|163->131|163->131|165->133|165->133|165->133|165->133|166->134|166->134|166->134|167->135|167->135|167->135|169->137|170->138|171->139|172->140
+                  HASH: a35fba38df05cf46696d4a46d844e3df1434591a
+                  MATRIX: 963->1|1090->33|1118->35|1256->147|1270->153|1336->198|4968->3802|5002->3819|5043->3821|5083->3833|5109->3849|5150->3851|5179->3852|5211->3857|5221->3858|5251->3866|5281->3867|5325->3884|5335->3885|5372->3900|5415->3916|5425->3917|5456->3926|5498->3941|5508->3942|5539->3951|5596->3976|5639->3990|5683->4003|5721->4013|6060->4324|6094->4341|6135->4343|6175->4355|6201->4371|6242->4373|6279->4382|6312->4387|6323->4388|6353->4396|6416->4431|6427->4432|6464->4447|6495->4449|6548->4474|6559->4475|6590->4484|6643->4509|6654->4510|6685->4519|6751->4553|6788->4562|6832->4575|6867->4582|7207->4894|7241->4911|7282->4913|7322->4925|7348->4941|7389->4943|7426->4952|7459->4957|7470->4958|7500->4966|7563->5001|7574->5002|7611->5017|7673->5051|7684->5052|7715->5061|7768->5086|7779->5087|7810->5096|7876->5130|7913->5139|7957->5152|7992->5159
+                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|134->102|134->102|134->102|135->103|135->103|135->103|136->104|136->104|136->104|136->104|136->104|138->106|138->106|138->106|140->108|140->108|140->108|141->109|141->109|141->109|142->110|143->111|144->112|145->113|151->119|151->119|151->119|152->120|152->120|152->120|153->121|153->121|153->121|153->121|155->123|155->123|155->123|155->123|156->124|156->124|156->124|157->125|157->125|157->125|159->127|160->128|161->129|162->130|168->136|168->136|168->136|169->137|169->137|169->137|170->138|170->138|170->138|170->138|172->140|172->140|172->140|174->142|174->142|174->142|175->143|175->143|175->143|177->145|178->146|179->147|180->148
                   -- GENERATED --
               */
           

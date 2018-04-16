@@ -35,41 +35,42 @@ Seq[Any](format.raw/*1.39*/("""
 """),format.raw/*3.1*/("""
 """),format.raw/*4.73*/("""
     """),_display_(/*5.6*/main("Login")/*5.19*/ {_display_(Seq[Any](format.raw/*5.21*/("""
-        """),format.raw/*6.9*/("""<!--HTML content for the index view -->
+       
+        """),format.raw/*7.9*/("""<!--HTML content for the index view -->
         <div class="col-xs-4">
             <h3>Sign in</h3>
             <!-- Display login errors if they exist -->
-            """),_display_(/*10.14*/if(loginForm.hasGlobalErrors)/*10.43*/ {_display_(Seq[Any](format.raw/*10.45*/("""
-                """),format.raw/*11.17*/("""<p class="alert alert-warning">
-                    """),_display_(/*12.22*/loginForm/*12.31*/.globalError.message),format.raw/*12.51*/("""
-                """),format.raw/*13.17*/("""</p>
-            """)))}),format.raw/*14.14*/("""
-            """),_display_(/*15.14*/if(flash.containsKey("error"))/*15.44*/ {_display_(Seq[Any](format.raw/*15.46*/("""
-                """),format.raw/*16.17*/("""<p class="alert alert-warning">
-                    """),_display_(/*17.22*/flash/*17.27*/.get("loginRequired")),format.raw/*17.48*/("""
-                """),format.raw/*18.17*/("""</p>
-             """)))}),format.raw/*19.15*/("""
-    """),format.raw/*20.5*/("""<!-- The login form -->
-            """),_display_(/*21.14*/helper/*21.20*/.form(action = controllers.routes.LoginController.loginSubmit())/*21.84*/ {_display_(Seq[Any](format.raw/*21.86*/("""
-             """),format.raw/*22.42*/("""
-             """),format.raw/*23.103*/("""
-             """),_display_(/*24.15*/CSRF/*24.19*/.formField),format.raw/*24.29*/("""
+            """),_display_(/*11.14*/if(loginForm.hasGlobalErrors)/*11.43*/ {_display_(Seq[Any](format.raw/*11.45*/("""
+                """),format.raw/*12.17*/("""<p class="alert alert-warning">
+                    """),_display_(/*13.22*/loginForm/*13.31*/.globalError.message),format.raw/*13.51*/("""
+                """),format.raw/*14.17*/("""</p>
+            """)))}),format.raw/*15.14*/("""
+            """),_display_(/*16.14*/if(flash.containsKey("error"))/*16.44*/ {_display_(Seq[Any](format.raw/*16.46*/("""
+                """),format.raw/*17.17*/("""<p class="alert alert-warning">
+                    """),_display_(/*18.22*/flash/*18.27*/.get("loginRequired")),format.raw/*18.48*/("""
+                """),format.raw/*19.17*/("""</p>
+             """)))}),format.raw/*20.15*/("""
+    """),format.raw/*21.5*/("""<!-- The login form -->
+            """),_display_(/*22.14*/helper/*22.20*/.form(action = controllers.routes.LoginController.loginSubmit())/*22.84*/ {_display_(Seq[Any](format.raw/*22.86*/("""
+             """),format.raw/*23.42*/("""
+             """),format.raw/*24.103*/("""
+             """),_display_(/*25.15*/CSRF/*25.19*/.formField),format.raw/*25.29*/("""
 
-             """),format.raw/*26.14*/("""<div class-"form-group">
-                """),_display_(/*27.18*/inputText(loginForm("email"), '_label -> "",
-                'class -> "form-control input-xs", 'placeholder -> "Email")),format.raw/*28.76*/("""
-            """),format.raw/*29.13*/("""</div>
+             """),format.raw/*27.14*/("""<div class-"form-group">
+                """),_display_(/*28.18*/inputText(loginForm("email"), '_label -> "",
+                'class -> "form-control input-xs", 'placeholder -> "Email")),format.raw/*29.76*/("""
+            """),format.raw/*30.13*/("""</div>
             <div class-"form-group">
-                """),_display_(/*31.18*/inputPassword(loginForm("password"), '_label -> "",
-                'class -> "form-control input-xs", 'placeholder -> "Password")),format.raw/*32.79*/("""
-            """),format.raw/*33.13*/("""</div>
+                """),_display_(/*32.18*/inputPassword(loginForm("password"), '_label -> "",
+                'class -> "form-control input-xs", 'placeholder -> "Password")),format.raw/*33.79*/("""
+            """),format.raw/*34.13*/("""</div>
             <div class="form-group">
                 <input type="submit" value="Sign In" class="btn btn-primary">
             </div>
-        """)))}),format.raw/*37.10*/(""" """),format.raw/*37.27*/("""
-        """),format.raw/*38.9*/("""</div>
+        """)))}),format.raw/*38.10*/(""" """),format.raw/*38.27*/("""
+        """),format.raw/*39.9*/("""</div>
         <!-- End of content for main -->
-""")))}),format.raw/*40.2*/("""
+""")))}),format.raw/*41.2*/("""
 """))
       }
     }
@@ -86,11 +87,11 @@ Seq[Any](format.raw/*1.39*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 15:49:44 IST 2018
+                  DATE: Mon Apr 16 17:49:54 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/login.scala.html
-                  HASH: f10f1540f7f48790aa5039448cda95be7d8dcbbf
-                  MATRIX: 966->1|1076->40|1121->38|1148->56|1176->129|1207->135|1228->148|1267->150|1302->159|1498->328|1536->357|1576->359|1621->376|1701->429|1719->438|1760->458|1805->475|1854->493|1895->507|1934->537|1974->539|2019->556|2099->609|2113->614|2155->635|2200->652|2250->671|2282->676|2346->713|2361->719|2434->783|2474->785|2516->827|2559->930|2601->945|2614->949|2645->959|2688->974|2757->1016|2898->1136|2939->1149|3027->1210|3178->1340|3219->1353|3400->1503|3429->1520|3465->1529|3544->1578
-                  LINES: 28->1|31->2|34->1|35->3|36->4|37->5|37->5|37->5|38->6|42->10|42->10|42->10|43->11|44->12|44->12|44->12|45->13|46->14|47->15|47->15|47->15|48->16|49->17|49->17|49->17|50->18|51->19|52->20|53->21|53->21|53->21|53->21|54->22|55->23|56->24|56->24|56->24|58->26|59->27|60->28|61->29|63->31|64->32|65->33|69->37|69->37|70->38|72->40
+                  HASH: 28a90c1bcfb3c793b7e9c689edb9e0f507fe902e
+                  MATRIX: 966->1|1076->40|1121->38|1148->56|1176->129|1207->135|1228->148|1267->150|1310->167|1506->336|1544->365|1584->367|1629->384|1709->437|1727->446|1768->466|1813->483|1862->501|1903->515|1942->545|1982->547|2027->564|2107->617|2121->622|2163->643|2208->660|2258->679|2290->684|2354->721|2369->727|2442->791|2482->793|2524->835|2567->938|2609->953|2622->957|2653->967|2696->982|2765->1024|2906->1144|2947->1157|3035->1218|3186->1348|3227->1361|3408->1511|3437->1528|3473->1537|3552->1586
+                  LINES: 28->1|31->2|34->1|35->3|36->4|37->5|37->5|37->5|39->7|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|48->16|48->16|49->17|50->18|50->18|50->18|51->19|52->20|53->21|54->22|54->22|54->22|54->22|55->23|56->24|57->25|57->25|57->25|59->27|60->28|61->29|62->30|64->32|65->33|66->34|70->38|70->38|71->39|73->41
                   -- GENERATED --
               */
           

@@ -90,14 +90,7 @@ Seq[Any](format.raw/*1.34*/("""
     <span class="sr-only">Next</span>
   </a>
 </div>
-<style>
-.carousel-inner img """),format.raw/*62.21*/("""{"""),format.raw/*62.22*/("""
-      
-      """),format.raw/*64.7*/("""width: 50%; /* Set width to 100% */
-      margin: auto;
-	  height:50%;
-  """),format.raw/*67.3*/("""}"""),format.raw/*67.4*/("""
-  """),format.raw/*68.3*/("""</style>
+
     
 
 				
@@ -149,18 +142,18 @@ Seq[Any](format.raw/*1.34*/("""
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) """),format.raw/*120.34*/("""{"""),format.raw/*120.35*/("""
-  """),format.raw/*121.3*/("""acc[i].addEventListener("click", function() """),format.raw/*121.47*/("""{"""),format.raw/*121.48*/("""
-    """),format.raw/*122.5*/("""this.classList.toggle("active");
+for (i = 0; i < acc.length; i++) """),format.raw/*113.34*/("""{"""),format.raw/*113.35*/("""
+  """),format.raw/*114.3*/("""acc[i].addEventListener("click", function() """),format.raw/*114.47*/("""{"""),format.raw/*114.48*/("""
+    """),format.raw/*115.5*/("""this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight)"""),format.raw/*124.31*/("""{"""),format.raw/*124.32*/("""
-      """),format.raw/*125.7*/("""panel.style.maxHeight = null;
-    """),format.raw/*126.5*/("""}"""),format.raw/*126.6*/(""" """),format.raw/*126.7*/("""else """),format.raw/*126.12*/("""{"""),format.raw/*126.13*/("""
-      """),format.raw/*127.7*/("""panel.style.maxHeight = panel.scrollHeight + "px";
-    """),format.raw/*128.5*/("""}"""),format.raw/*128.6*/(""" 
-  """),format.raw/*129.3*/("""}"""),format.raw/*129.4*/(""");
-"""),format.raw/*130.1*/("""}"""),format.raw/*130.2*/("""
-"""),format.raw/*131.1*/("""</script>
+    if (panel.style.maxHeight)"""),format.raw/*117.31*/("""{"""),format.raw/*117.32*/("""
+      """),format.raw/*118.7*/("""panel.style.maxHeight = null;
+    """),format.raw/*119.5*/("""}"""),format.raw/*119.6*/(""" """),format.raw/*119.7*/("""else """),format.raw/*119.12*/("""{"""),format.raw/*119.13*/("""
+      """),format.raw/*120.7*/("""panel.style.maxHeight = panel.scrollHeight + "px";
+    """),format.raw/*121.5*/("""}"""),format.raw/*121.6*/(""" 
+  """),format.raw/*122.3*/("""}"""),format.raw/*122.4*/(""");
+"""),format.raw/*123.1*/("""}"""),format.raw/*123.2*/("""
+"""),format.raw/*124.1*/("""</script>
 
 
 
@@ -221,11 +214,11 @@ for (i = 0; i < acc.length; i++) """),format.raw/*120.34*/("""{"""),format.raw/*
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 15:56:13 IST 2018
+                  DATE: Mon Apr 16 17:41:42 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/FAQ.scala.html
-                  HASH: e2564ddaa8081fc21330ff44e1c63725c6d7e323
-                  MATRIX: 960->1|1087->33|1115->35|1253->147|1267->153|1333->198|3140->1977|3169->1978|3210->1992|3310->2065|3338->2066|3368->2069|4782->3454|4812->3455|4843->3458|4916->3502|4946->3503|4979->3508|5112->3612|5142->3613|5177->3620|5239->3654|5268->3655|5297->3656|5331->3661|5361->3662|5396->3669|5479->3724|5508->3725|5540->3729|5569->3730|5600->3733|5629->3734|5658->3735
-                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|94->62|94->62|96->64|99->67|99->67|100->68|152->120|152->120|153->121|153->121|153->121|154->122|156->124|156->124|157->125|158->126|158->126|158->126|158->126|158->126|159->127|160->128|160->128|161->129|161->129|162->130|162->130|163->131
+                  HASH: 963cd00e49f0bd9418b2d3ffd3d3194c4c13f0c2
+                  MATRIX: 960->1|1087->33|1115->35|1253->147|1267->153|1333->198|4490->3326|4520->3327|4551->3330|4624->3374|4654->3375|4687->3380|4820->3484|4850->3485|4885->3492|4947->3526|4976->3527|5005->3528|5039->3533|5069->3534|5104->3541|5187->3596|5216->3597|5248->3601|5277->3602|5308->3605|5337->3606|5366->3607
+                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|145->113|145->113|146->114|146->114|146->114|147->115|149->117|149->117|150->118|151->119|151->119|151->119|151->119|151->119|152->120|153->121|153->121|154->122|154->122|155->123|155->123|156->124
                   -- GENERATED --
               */
           
