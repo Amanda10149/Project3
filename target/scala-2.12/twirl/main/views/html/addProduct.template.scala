@@ -34,33 +34,127 @@ object addProduct extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api
 Seq[Any](format.raw/*1.37*/("""
 
 """),format.raw/*4.1*/("""
+"""),format.raw/*5.1*/("""<link rel="stylesheet" type="text/css" href=""""),_display_(/*5.47*/routes/*5.53*/.Assets.versioned("stylesheets/myStyles.css")),format.raw/*5.98*/("""">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-"""),_display_(/*7.2*/main("Add Product")/*7.21*/ {_display_(Seq[Any](format.raw/*7.23*/("""
-    """),format.raw/*8.5*/("""<p class="lead">Add a new product</p>
 
-    """),_display_(/*10.6*/form(action=routes.HomeController.addProductSubmit(), 'class -> "form-horizontal", 'role -> "form")/*10.105*/{_display_(Seq[Any](format.raw/*10.106*/("""
-        """),format.raw/*11.37*/("""
-        """),format.raw/*12.99*/("""
-        """),_display_(/*13.10*/CSRF/*13.14*/.formField),format.raw/*13.24*/("""
+</head>
+
+<body>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<img src="/assets/images/sale.jpg" alt="Sale">
+</div>
 
 
-        """),_display_(/*16.10*/inputText(productForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*16.85*/("""
-        """),_display_(/*17.10*/inputText(productForm("description"), '_label -> "descripton", 'class -> "form-control")),format.raw/*17.98*/("""
-        """),_display_(/*18.10*/inputText(productForm("stock"), '_label -> "stock", 'class -> "form-control")),format.raw/*18.87*/("""
-        """),_display_(/*19.10*/inputText(productForm("price"), '_label -> "Price", 'class ->"form-control")),format.raw/*19.86*/("""
+<div class="item">
+<img src="/assets/images/tv.jpg" alt="TV">
+</div>
 
-        """),_display_(/*21.10*/inputText(productForm("id"), '_label ->"", 'hidden ->"hidden")),format.raw/*21.72*/("""
+<div class="item">
+<img src="/assets/images/iphone.png" alt="iPhone">
+</div>
+
+<div class="item">
+<img src="/assets/images/laptop.jpg" alt="Macbook">
+</div>
 
 
-        """),format.raw/*24.9*/("""<div class="actions">
+</div>
+
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+<style>
+.carousel-inner img """),format.raw/*65.21*/("""{"""),format.raw/*65.22*/("""
+
+"""),format.raw/*67.1*/("""width: 50%; /* Set width to 100% */
+margin: auto;
+height:80%;
+"""),format.raw/*70.1*/("""}"""),format.raw/*70.2*/("""
+"""),format.raw/*71.1*/("""</style>
+
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>                        
+</button>
+<a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+            <li class="dropdown"><a href="/">Home</a></li>
+            <li class="dropdown"><a href="/tv">Televisions</a></li>
+            <li class="dropdown"><a href="/Phones">Phones</a></li>
+            <li class="dropdown"><a href="/Laptop">Laptops</a></li>
+            <li class="dropdown"><a href="/about">About Us</a></li>
+            <li class="dropdown"><a href="/FAQ">FAQ</a></li>
+            <li class="dropdown"><a href="/login">Login</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+"""),_display_(/*101.2*/main("Add Product")/*101.21*/ {_display_(Seq[Any](format.raw/*101.23*/("""
+    """),format.raw/*102.5*/("""<p class="lead">Add a new product</p>
+
+    """),_display_(/*104.6*/form(action=routes.HomeController.addProductSubmit(), 'class -> "form-horizontal", 'role -> "form")/*104.105*/{_display_(Seq[Any](format.raw/*104.106*/("""
+        """),format.raw/*105.37*/("""
+        """),format.raw/*106.99*/("""
+        """),_display_(/*107.10*/CSRF/*107.14*/.formField),format.raw/*107.24*/("""
+
+
+        """),_display_(/*110.10*/inputText(productForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*110.85*/("""
+        """),_display_(/*111.10*/inputText(productForm("description"), '_label -> "descripton", 'class -> "form-control")),format.raw/*111.98*/("""
+        """),_display_(/*112.10*/inputText(productForm("stock"), '_label -> "stock", 'class -> "form-control")),format.raw/*112.87*/("""
+        """),_display_(/*113.10*/inputText(productForm("price"), '_label -> "Price", 'class ->"form-control")),format.raw/*113.86*/("""
+
+        """),_display_(/*115.10*/inputText(productForm("id"), '_label ->"", 'hidden ->"hidden")),format.raw/*115.72*/("""
+
+
+        """),format.raw/*118.9*/("""<div class="actions">
                 <input type="submit" value="Add/Update Product" class="btn btn-primary">
-                <a href+""""),_display_(/*26.27*/routes/*26.33*/.HomeController.index),format.raw/*26.54*/("""">
+                <a href+""""),_display_(/*120.27*/routes/*120.33*/.HomeController.index),format.raw/*120.54*/("""">
                     <button type="button" class+"btn btn-warning"> Cancel </button>
                 
                 </a>
         </div>
-    """)))}),format.raw/*31.6*/("""   
+    """)))}),format.raw/*125.6*/("""   
 """)))}))
       }
     }
@@ -77,11 +171,11 @@ Seq[Any](format.raw/*1.37*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 15:56:57 IST 2018
+                  DATE: Mon Apr 16 21:37:53 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/addProduct.scala.html
-                  HASH: f15b9145f73da429a1ea1aafc3b05362751659e9
-                  MATRIX: 967->1|1075->39|1120->36|1148->55|1177->59|1204->78|1243->80|1274->85|1344->129|1453->228|1493->229|1530->266|1567->365|1604->375|1617->379|1648->389|1687->401|1783->476|1820->486|1929->574|1966->584|2064->661|2101->671|2198->747|2236->758|2319->820|2357->831|2521->968|2536->974|2578->995|2753->1140
-                  LINES: 28->1|31->3|34->1|36->4|39->7|39->7|39->7|40->8|42->10|42->10|42->10|43->11|44->12|45->13|45->13|45->13|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|53->21|53->21|56->24|58->26|58->26|58->26|63->31
+                  HASH: 4947dc422fac610e985b7e920e37279a678422aa
+                  MATRIX: 967->1|1075->39|1120->36|1148->55|1175->56|1247->102|1261->108|1326->153|3356->2155|3385->2156|3414->2158|3503->2220|3531->2221|3559->2222|4777->3413|4806->3432|4847->3434|4880->3439|4951->3483|5061->3582|5102->3583|5140->3620|5178->3719|5216->3729|5230->3733|5262->3743|5302->3755|5399->3830|5437->3840|5547->3928|5585->3938|5684->4015|5722->4025|5820->4101|5859->4112|5943->4174|5982->4185|6147->4322|6163->4328|6206->4349|6382->4494
+                  LINES: 28->1|31->3|34->1|36->4|37->5|37->5|37->5|37->5|97->65|97->65|99->67|102->70|102->70|103->71|133->101|133->101|133->101|134->102|136->104|136->104|136->104|137->105|138->106|139->107|139->107|139->107|142->110|142->110|143->111|143->111|144->112|144->112|145->113|145->113|147->115|147->115|150->118|152->120|152->120|152->120|157->125
                   -- GENERATED --
               */
           

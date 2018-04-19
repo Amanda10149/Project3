@@ -31,3 +31,5 @@ sbt
 run
 exit
 run
+h2-browser
+run
