@@ -66,7 +66,7 @@ public class HomeController extends Controller {
 
     public Result FAQ() {
         
-        List<Product> productList = Product.findAll();
+        
 
         return ok(views.html.FAQ.render(productList));
 

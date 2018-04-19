@@ -117,9 +117,35 @@ Seq[Any](format.raw/*1.34*/("""
     </div>
 						</div>
 					
-					</div>
+          </div>
+          """),_display_(/*89.12*/main("FAQ")/*89.23*/ {_display_(Seq[Any](format.raw/*89.25*/("""
+            """),format.raw/*90.13*/("""<p class="lead">ask a question</p>
+        
+            """),_display_(/*92.14*/form(action=routes.HomeController.addProductSubmit(), 'class -> "form-horizontal", 'role -> "form")/*92.113*/{_display_(Seq[Any](format.raw/*92.114*/("""
+                """),format.raw/*93.45*/("""
+                """),format.raw/*94.107*/("""
+                """),_display_(/*95.18*/CSRF/*95.22*/.formField),format.raw/*95.32*/("""
+        
+        
+                """),_display_(/*98.18*/inputText(productForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*98.93*/("""
+                """),_display_(/*99.18*/inputText(productForm("Email"), '_label -> "descripton", 'class -> "form-control")),format.raw/*99.100*/("""
+                """),_display_(/*100.18*/inputText(productForm("Queston"), '_label -> "stock", 'class -> "form-control")),format.raw/*100.97*/("""
+               
+        
+               
+        
+        
+                """),format.raw/*106.17*/("""<div class="actions">
+                        <input type="submit" value="Add/Update Product" class="btn btn-primary">
+                        <a href=""""),_display_(/*108.35*/routes/*108.41*/.HomeController.index),format.raw/*108.62*/("""">
+                            <button type="button" class="btn btn-warning"> Cancel </button>
+                        
+                        </a>
+                </div>
+            """)))}),format.raw/*113.14*/("""   
+        """)))}),format.raw/*114.10*/("""          
 					
-					<div id="centreCol">
+					"""),format.raw/*116.6*/("""<div id="centreCol">
 						<div class="outerColDiv">
 							<div>
 <!-- Accordain -->
@@ -143,18 +169,18 @@ Seq[Any](format.raw/*1.34*/("""
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) """),format.raw/*114.34*/("""{"""),format.raw/*114.35*/("""
-  """),format.raw/*115.3*/("""acc[i].addEventListener("click", function() """),format.raw/*115.47*/("""{"""),format.raw/*115.48*/("""
-    """),format.raw/*116.5*/("""this.classList.toggle("active");
+for (i = 0; i < acc.length; i++) """),format.raw/*140.34*/("""{"""),format.raw/*140.35*/("""
+  """),format.raw/*141.3*/("""acc[i].addEventListener("click", function() """),format.raw/*141.47*/("""{"""),format.raw/*141.48*/("""
+    """),format.raw/*142.5*/("""this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight)"""),format.raw/*118.31*/("""{"""),format.raw/*118.32*/("""
-      """),format.raw/*119.7*/("""panel.style.maxHeight = null;
-    """),format.raw/*120.5*/("""}"""),format.raw/*120.6*/(""" """),format.raw/*120.7*/("""else """),format.raw/*120.12*/("""{"""),format.raw/*120.13*/("""
-      """),format.raw/*121.7*/("""panel.style.maxHeight = panel.scrollHeight + "px";
-    """),format.raw/*122.5*/("""}"""),format.raw/*122.6*/(""" 
-  """),format.raw/*123.3*/("""}"""),format.raw/*123.4*/(""");
-"""),format.raw/*124.1*/("""}"""),format.raw/*124.2*/("""
-"""),format.raw/*125.1*/("""</script>
+    if (panel.style.maxHeight)"""),format.raw/*144.31*/("""{"""),format.raw/*144.32*/("""
+      """),format.raw/*145.7*/("""panel.style.maxHeight = null;
+    """),format.raw/*146.5*/("""}"""),format.raw/*146.6*/(""" """),format.raw/*146.7*/("""else """),format.raw/*146.12*/("""{"""),format.raw/*146.13*/("""
+      """),format.raw/*147.7*/("""panel.style.maxHeight = panel.scrollHeight + "px";
+    """),format.raw/*148.5*/("""}"""),format.raw/*148.6*/(""" 
+  """),format.raw/*149.3*/("""}"""),format.raw/*149.4*/(""");
+"""),format.raw/*150.1*/("""}"""),format.raw/*150.2*/("""
+"""),format.raw/*151.1*/("""</script>
 
 
 
@@ -215,11 +241,11 @@ for (i = 0; i < acc.length; i++) """),format.raw/*114.34*/("""{"""),format.raw/*
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 16 20:31:25 IST 2018
+                  DATE: Thu Apr 19 11:10:38 IST 2018
                   SOURCE: /home/wdd/webapps/attempt/app/views/FAQ.scala.html
-                  HASH: 0d0bbb556ed6346e796c9c1dc73886ac6f04d487
-                  MATRIX: 960->1|1087->33|1115->35|1253->147|1267->153|1333->198|4558->3394|4588->3395|4619->3398|4692->3442|4722->3443|4755->3448|4888->3552|4918->3553|4953->3560|5015->3594|5044->3595|5073->3596|5107->3601|5137->3602|5172->3609|5255->3664|5284->3665|5316->3669|5345->3670|5376->3673|5405->3674|5434->3675
-                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|146->114|146->114|147->115|147->115|147->115|148->116|150->118|150->118|151->119|152->120|152->120|152->120|152->120|152->120|153->121|154->122|154->122|155->123|155->123|156->124|156->124|157->125
+                  HASH: d8b585252c7ca9076f316a55258be944d15ac550
+                  MATRIX: 960->1|1087->33|1115->35|1253->147|1267->153|1333->198|4075->2913|4095->2924|4135->2926|4176->2939|4260->2996|4369->3095|4409->3096|4454->3141|4500->3248|4545->3266|4558->3270|4589->3280|4652->3316|4748->3391|4793->3409|4897->3491|4943->3509|5044->3588|5149->3664|5330->3817|5346->3823|5389->3844|5606->4029|5651->4042|5701->4064|6216->4550|6246->4551|6277->4554|6350->4598|6380->4599|6413->4604|6546->4708|6576->4709|6611->4716|6673->4750|6702->4751|6731->4752|6765->4757|6795->4758|6830->4765|6913->4820|6942->4821|6974->4825|7003->4826|7034->4829|7063->4830|7092->4831
+                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|121->89|121->89|121->89|122->90|124->92|124->92|124->92|125->93|126->94|127->95|127->95|127->95|130->98|130->98|131->99|131->99|132->100|132->100|138->106|140->108|140->108|140->108|145->113|146->114|148->116|172->140|172->140|173->141|173->141|173->141|174->142|176->144|176->144|177->145|178->146|178->146|178->146|178->146|178->146|179->147|180->148|180->148|181->149|181->149|182->150|182->150|183->151
                   -- GENERATED --
               */
           

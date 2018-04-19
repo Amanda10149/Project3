@@ -1,4 +1,4 @@
-name := """WEB CA2 website"""
+name := """Project"""
 organization := "com.example"
 
 version := "1.0-SNAPSHOT"
