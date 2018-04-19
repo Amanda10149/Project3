@@ -66,11 +66,31 @@ public class HomeController extends Controller {
 
     public Result FAQ() {
         
-        
+        Form<Question> newQuestionForm = formFactory.form(Question.class).bindFromRequest();
 
         return ok(views.html.FAQ.render(productList));
 
     }
+
+    public Result addQuestionSubmit() {
+        
+                Form<Question> newQuestionForm = formFactory.form(Question.class).bindFromRequest();
+        
+                if (newQuestionForm.hasErrors()) {
+                    return badRequest(views.html.FAQ.render(newQuestionForm));
+        
+                }else {
+                    Question newQuestion = newQuestionForm.get();
+        
+                    newQuestion.save();
+                    
+                    flash("success", "Question "+ newQuestion.getName() + "was Submitted");
+        
+                    return redirect(controllers.routes.HomeController.FAQ());
+                    
+                
+                }
+            }
 
 
     public Result Laptop() {

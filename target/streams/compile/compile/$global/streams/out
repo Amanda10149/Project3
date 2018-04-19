@@ -1,28 +1,19 @@
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:92:14: not found: value form[0m
-[0m[[0m[31merror[0m] [0m[0m            @form(action=routes.HomeController.addProductSubmit(), 'class -> "form-horizontal", 'role -> "form"){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/newWorkingVersion/Project3/app/views/FAQ.scala.html:92:14: object play.data.Form is not a value[0m
+[0m[[0m[31merror[0m] [0m[0m            @Form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form"){[0m
 [0m[[0m[31merror[0m] [0m[0m             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:92:19: not found: value action[0m
-[0m[[0m[31merror[0m] [0m[0m            @form(action=routes.HomeController.addProductSubmit(), 'class -> "form-horizontal", 'role -> "form"){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/newWorkingVersion/Project3/app/views/FAQ.scala.html:92:19: not found: value action[0m
+[0m[[0m[31merror[0m] [0m[0m            @Form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form"){[0m
 [0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:95:18: not found: value CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/newWorkingVersion/Project3/app/views/FAQ.scala.html:95:18: not found: value CSRF[0m
 [0m[[0m[31merror[0m] [0m[0m                @CSRF.formField[0m
 [0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:98:18: not found: value inputText[0m
-[0m[[0m[31merror[0m] [0m[0m                @inputText(productForm("name"), '_label -> "Name", 'class -> "form-control")[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/newWorkingVersion/Project3/app/views/FAQ.scala.html:98:18: not found: value InputText[0m
+[0m[[0m[31merror[0m] [0m[0m                @InputText(QuestionForm("name"), '_label -> "Name", 'class -> "form-control")[0m
 [0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:98:28: not found: value productForm[0m
-[0m[[0m[31merror[0m] [0m[0m                @inputText(productForm("name"), '_label -> "Name", 'class -> "form-control")[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:99:18: not found: value inputText[0m
-[0m[[0m[31merror[0m] [0m[0m                @inputText(productForm("Email"), '_label -> "descripton", 'class -> "form-control")[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/newWorkingVersion/Project3/app/views/FAQ.scala.html:99:18: not found: value InputText[0m
+[0m[[0m[31merror[0m] [0m[0m                @InputText(QuestionForm("email"), '_label -> "descripton", 'class -> "form-control")[0m
 [0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:99:28: not found: value productForm[0m
-[0m[[0m[31merror[0m] [0m[0m                @inputText(productForm("Email"), '_label -> "descripton", 'class -> "form-control")[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:100:18: not found: value inputText[0m
-[0m[[0m[31merror[0m] [0m[0m                @inputText(productForm("Queston"), '_label -> "stock", 'class -> "form-control")[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/newWorkingVersion/Project3/app/views/FAQ.scala.html:100:18: not found: value InputText[0m
+[0m[[0m[31merror[0m] [0m[0m                @InputText(QuestionForm("question"), '_label -> "stock", 'class -> "form-control")[0m
 [0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/attempt/app/views/FAQ.scala.html:100:28: not found: value productForm[0m
-[0m[[0m[31merror[0m] [0m[0m                @inputText(productForm("Queston"), '_label -> "stock", 'class -> "form-control")[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m9 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m

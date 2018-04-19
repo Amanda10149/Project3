@@ -133,28 +133,29 @@ height:80%;
 """),_display_(/*101.2*/main("Add Product")/*101.21*/ {_display_(Seq[Any](format.raw/*101.23*/("""
     """),format.raw/*102.5*/("""<p class="lead">Add a new product</p>
 
-    """),_display_(/*104.6*/form(action=routes.HomeController.addProductSubmit(), 'class -> "form-horizontal", 'role -> "form")/*104.105*/{_display_(Seq[Any](format.raw/*104.106*/("""
+    """),_display_(/*104.6*/form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form")/*104.106*/{_display_(Seq[Any](format.raw/*104.107*/("""
         """),format.raw/*105.37*/("""
         """),format.raw/*106.99*/("""
         """),_display_(/*107.10*/CSRF/*107.14*/.formField),format.raw/*107.24*/("""
 
 
         """),_display_(/*110.10*/inputText(productForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*110.85*/("""
-        """),_display_(/*111.10*/inputText(productForm("description"), '_label -> "descripton", 'class -> "form-control")),format.raw/*111.98*/("""
+        """),_display_(/*111.10*/inputText(productForm("descripton"), '_label -> "descripton", 'class -> "form-control")),format.raw/*111.97*/("""
         """),_display_(/*112.10*/inputText(productForm("stock"), '_label -> "stock", 'class -> "form-control")),format.raw/*112.87*/("""
-        """),_display_(/*113.10*/inputText(productForm("price"), '_label -> "Price", 'class ->"form-control")),format.raw/*113.86*/("""
+        """),_display_(/*113.10*/inputText(productForm("price"), '_label -> "stock", 'class -> "form-control")),format.raw/*113.87*/("""
+        
 
        
 
 
-        """),format.raw/*118.9*/("""<div class="actions">
+        """),format.raw/*119.9*/("""<div class="actions">
                 <input type="submit" value="Add/Update Product" class="btn btn-primary">
-                <a href=""""),_display_(/*120.27*/routes/*120.33*/.HomeController.index),format.raw/*120.54*/("""">
+                <a href=""""),_display_(/*121.27*/routes/*121.33*/.HomeController.index),format.raw/*121.54*/("""">
                     <button type="button" class="btn btn-warning"> Cancel </button>
                 
                 </a>
         </div>
-    """)))}),format.raw/*125.6*/("""   
+    """)))}),format.raw/*126.6*/("""   
 """)))}))
       }
     }
@@ -171,11 +172,11 @@ height:80%;
 
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 19 10:29:56 IST 2018
-                  SOURCE: /home/wdd/webapps/attempt/app/views/addProduct.scala.html
-                  HASH: 400da9a4d0dfc425691961f964e62ce2fc88d790
-                  MATRIX: 967->1|1075->39|1120->36|1148->55|1175->56|1247->102|1261->108|1326->153|3356->2155|3385->2156|3414->2158|3503->2220|3531->2221|3559->2222|4777->3413|4806->3432|4847->3434|4880->3439|4951->3483|5061->3582|5102->3583|5140->3620|5178->3719|5216->3729|5230->3733|5262->3743|5302->3755|5399->3830|5437->3840|5547->3928|5585->3938|5684->4015|5722->4025|5820->4101|5868->4121|6033->4258|6049->4264|6092->4285|6268->4430
-                  LINES: 28->1|31->3|34->1|36->4|37->5|37->5|37->5|37->5|97->65|97->65|99->67|102->70|102->70|103->71|133->101|133->101|133->101|134->102|136->104|136->104|136->104|137->105|138->106|139->107|139->107|139->107|142->110|142->110|143->111|143->111|144->112|144->112|145->113|145->113|150->118|152->120|152->120|152->120|157->125
+                  DATE: Thu Apr 19 14:32:57 IST 2018
+                  SOURCE: /home/wdd/webapps/newWorkingVersion/Project3/app/views/addProduct.scala.html
+                  HASH: a341a8d822a40a0c16c486ebf897378dc047c448
+                  MATRIX: 967->1|1075->39|1120->36|1148->55|1175->56|1247->102|1261->108|1326->153|3356->2155|3385->2156|3414->2158|3503->2220|3531->2221|3559->2222|4777->3413|4806->3432|4847->3434|4880->3439|4951->3483|5062->3583|5103->3584|5141->3621|5179->3720|5217->3730|5231->3734|5263->3744|5303->3756|5400->3831|5438->3841|5547->3928|5585->3938|5684->4015|5722->4025|5821->4102|5878->4131|6043->4268|6059->4274|6102->4295|6278->4440
+                  LINES: 28->1|31->3|34->1|36->4|37->5|37->5|37->5|37->5|97->65|97->65|99->67|102->70|102->70|103->71|133->101|133->101|133->101|134->102|136->104|136->104|136->104|137->105|138->106|139->107|139->107|139->107|142->110|142->110|143->111|143->111|144->112|144->112|145->113|145->113|151->119|153->121|153->121|153->121|158->126
                   -- GENERATED --
               */
           

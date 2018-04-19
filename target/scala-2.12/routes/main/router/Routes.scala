@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/webapps/attempt/conf/routes
-// @DATE:Mon Apr 16 15:55:20 IST 2018
+// @SOURCE:/home/wdd/webapps/newWorkingVersion/Project3/conf/routes
+// @DATE:Thu Apr 19 14:32:57 IST 2018
 
 package router
 
@@ -19,7 +19,7 @@ class Routes(
   HomeController_0: controllers.HomeController,
   // @LINE:14
   LoginController_2: controllers.LoginController,
-  // @LINE:22
+  // @LINE:23
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -30,7 +30,7 @@ class Routes(
     HomeController_0: controllers.HomeController,
     // @LINE:14
     LoginController_2: controllers.LoginController,
-    // @LINE:22
+    // @LINE:23
     Assets_1: controllers.Assets
   ) = this(errorHandler, HomeController_0, LoginController_2, Assets_1, "/")
 
@@ -54,6 +54,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """loginSubmit""", """controllers.LoginController.loginSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addProduct""", """controllers.HomeController.addProduct"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addProductSubmit""", """controllers.HomeController.addProductSubmit"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addQuestionSubmit""", """controllers.HomeController.addQuestionSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """delProduct/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deleteProduct(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
@@ -220,7 +221,7 @@ class Routes(
       Nil,
       "GET",
       this.prefix + """addProduct""",
-      """Add Product""",
+      """Add""",
       Seq()
     )
   )
@@ -243,11 +244,29 @@ class Routes(
     )
   )
 
-  // @LINE:20
-  private[this] lazy val controllers_HomeController_deleteProduct10_route = Route("GET",
+  // @LINE:19
+  private[this] lazy val controllers_HomeController_addQuestionSubmit10_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addQuestionSubmit")))
+  )
+  private[this] lazy val controllers_HomeController_addQuestionSubmit10_invoker = createInvoker(
+    HomeController_0.addQuestionSubmit,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "addQuestionSubmit",
+      Nil,
+      "POST",
+      this.prefix + """addQuestionSubmit""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:21
+  private[this] lazy val controllers_HomeController_deleteProduct11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("delProduct/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_HomeController_deleteProduct10_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_deleteProduct11_invoker = createInvoker(
     HomeController_0.deleteProduct(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -261,11 +280,11 @@ class Routes(
     )
   )
 
-  // @LINE:22
-  private[this] lazy val controllers_Assets_versioned11_route = Route("GET",
+  // @LINE:23
+  private[this] lazy val controllers_Assets_versioned12_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned11_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned12_invoker = createInvoker(
     Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -342,16 +361,22 @@ class Routes(
         controllers_HomeController_addProductSubmit9_invoker.call(HomeController_0.addProductSubmit)
       }
   
-    // @LINE:20
-    case controllers_HomeController_deleteProduct10_route(params@_) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_HomeController_deleteProduct10_invoker.call(HomeController_0.deleteProduct(id))
+    // @LINE:19
+    case controllers_HomeController_addQuestionSubmit10_route(params@_) =>
+      call { 
+        controllers_HomeController_addQuestionSubmit10_invoker.call(HomeController_0.addQuestionSubmit)
       }
   
-    // @LINE:22
-    case controllers_Assets_versioned11_route(params@_) =>
+    // @LINE:21
+    case controllers_HomeController_deleteProduct11_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_HomeController_deleteProduct11_invoker.call(HomeController_0.deleteProduct(id))
+      }
+  
+    // @LINE:23
+    case controllers_Assets_versioned12_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned11_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned12_invoker.call(Assets_1.versioned(path, file))
       }
   }
 }

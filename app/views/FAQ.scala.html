@@ -1,4 +1,4 @@
-@(products: List[models.Product])
+@(QuestionForm:Form [models.Question])
 
 <html>
 	<head>
@@ -86,6 +86,32 @@
 						</div>
 					
           </div>
+          @main("Add Question") {
+            <p class="lead">Ask a question</p>
+        
+            @Form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form"){
+                @* CSRF attack prevention *@
+                @* This token, send by the controller, will be used to authenticate the form bubmission *@
+                @CSRF.formField
+        
+        
+                @InputText(QuestionForm("name"), '_label -> "Name", 'class -> "form-control")
+                @InputText(QuestionForm("email"), '_label -> "descripton", 'class -> "form-control")
+                @InputText(QuestionForm("question"), '_label -> "stock", 'class -> "form-control")
+               
+        
+               
+        
+        
+                <div class="actions">
+                        <input type="submit" value="AddQuestion" class="btn btn-primary">
+                        <a href="@routes.HomeController.FAQ">
+                            <button type="button" class="btn btn-warning"> Cancel </button>
+                        
+                        </a>
+                </div>
+            }   
+        }
           
 					
 					<div id="centreCol">
