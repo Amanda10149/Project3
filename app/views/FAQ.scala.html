@@ -1,4 +1,5 @@
-@(QuestionForm:Form [models.Question])
+@(questionForm : Form[models.Question])
+@import helper._ 
 
 <html>
 	<head>
@@ -89,15 +90,15 @@
           @main("Add Question") {
             <p class="lead">Ask a question</p>
         
-            @Form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form"){
+            @form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form"){
                 @* CSRF attack prevention *@
                 @* This token, send by the controller, will be used to authenticate the form bubmission *@
                 @CSRF.formField
         
         
-                @InputText(QuestionForm("name"), '_label -> "Name", 'class -> "form-control")
-                @InputText(QuestionForm("email"), '_label -> "descripton", 'class -> "form-control")
-                @InputText(QuestionForm("question"), '_label -> "stock", 'class -> "form-control")
+                @inputText(questionForm("name"), '_label -> "Name", 'class -> "form-control")
+                @inputText(questionForm("email"), '_label -> "descripton", 'class -> "form-control")
+                @inputText(questionForm("question"), '_label -> "stock", 'class -> "form-control")
                
         
                

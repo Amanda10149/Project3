@@ -33,34 +33,28 @@ public class Question extends Model {
         this.Question= Question;
 
     }
-    public static final Finder<Long, Product> find = new Finder<>(Product.class);
+    public static final Finder<Long, Question> find = new Finder<>(Question.class);
     
-        public static final List<Question> findAll() {
-            return Question.find.all();
-        }
         
         
-        public void setId(long id) {
-            this.id = id;;
-        }
+        
         public String getName() {
             return name;
         }
         public void setName(String name) {
             this.name = name;
         }
+        public String getQuestion() {
+        return Question;
+        }
+        public void setQuestion(String Question) {
+            this.Question = Question;
+        }
+        
         public String getEmail() {
-            return Question;
+            return Email;
         }
         public void setEmail(String Email) {
             this.Email = Email;
         }
-        public int getQuestion() {
-            return Question;
-        }
-        public void setQuestion(int Question ) {
-            this.Question = Question;
-        }
-       
-       
     }

@@ -49,3 +49,5 @@ compile
 clena
 clean
 compile
+clean
+compile

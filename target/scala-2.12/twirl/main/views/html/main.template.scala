@@ -128,7 +128,7 @@ Copyright <strong>Online Shop</strong>
 
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 19 14:32:57 IST 2018
+                  DATE: Thu Apr 19 14:44:00 IST 2018
                   SOURCE: /home/wdd/webapps/newWorkingVersion/Project3/app/views/main.scala.html
                   HASH: fa101c1370c63dc756714f991602bba5b69043e5
                   MATRIX: 952->1|1077->31|1105->33|1221->122|1247->127|1446->299|1461->305|1523->346|1777->574|1807->595|1846->596|1892->611|1935->627|1950->633|1994->656|2162->798|2189->816|2228->817|2274->832|2317->848|2332->854|2377->878|2503->978|2530->985|2559->987
