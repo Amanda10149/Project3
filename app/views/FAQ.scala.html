@@ -1,4 +1,4 @@
-@(questionForm : Form[models.Question])
+@(QuestionForm : Form[models.Question])
 @import helper._ 
 
 <html>
@@ -96,9 +96,9 @@
                 @CSRF.formField
         
         
-                @inputText(questionForm("name"), '_label -> "Name", 'class -> "form-control")
-                @inputText(questionForm("email"), '_label -> "descripton", 'class -> "form-control")
-                @inputText(questionForm("question"), '_label -> "stock", 'class -> "form-control")
+                @inputText(QuestionForm("name"), '_label -> "Name", 'class -> "form-control")
+                @inputText(QuestionForm("email"), '_label -> "descripton", 'class -> "form-control")
+                @inputText(QuestionForm("question"), '_label -> "stock", 'class -> "form-control")
                
         
                

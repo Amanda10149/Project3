@@ -66,7 +66,7 @@ public class HomeController extends Controller {
 
     public Result FAQ() {
         
-        Form<Question> newQuestionForm = formFactory.form(Question.class).bindFromRequest();
+        Form<Question> newQuestionForm = formFactory.form(Question.class);
 
         return ok(views.html.FAQ.render(questionForm));
 

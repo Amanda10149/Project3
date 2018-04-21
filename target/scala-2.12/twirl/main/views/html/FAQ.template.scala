@@ -25,7 +25,7 @@ import play.core.j.PlayFormsMagicForJava._
 object FAQ extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[Form[models.Question],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(questionForm : Form[models.Question]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(QuestionForm : Form[models.Question]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 /*2.2*/import helper._
@@ -128,9 +128,9 @@ Seq[Any](format.raw/*1.40*/("""
                 """),_display_(/*96.18*/CSRF/*96.22*/.formField),format.raw/*96.32*/("""
         
         
-                """),_display_(/*99.18*/inputText(questionForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*99.94*/("""
-                """),_display_(/*100.18*/inputText(questionForm("email"), '_label -> "descripton", 'class -> "form-control")),format.raw/*100.101*/("""
-                """),_display_(/*101.18*/inputText(questionForm("question"), '_label -> "stock", 'class -> "form-control")),format.raw/*101.99*/("""
+                """),_display_(/*99.18*/inputText(QuestionForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*99.94*/("""
+                """),_display_(/*100.18*/inputText(QuestionForm("email"), '_label -> "descripton", 'class -> "form-control")),format.raw/*100.101*/("""
+                """),_display_(/*101.18*/inputText(QuestionForm("question"), '_label -> "stock", 'class -> "form-control")),format.raw/*101.99*/("""
                
         
                
@@ -232,9 +232,9 @@ for (i = 0; i < acc.length; i++) """),format.raw/*142.34*/("""{"""),format.raw/*
     }
   }
 
-  def render(questionForm:Form[models.Question]): play.twirl.api.HtmlFormat.Appendable = apply(questionForm)
+  def render(QuestionForm:Form[models.Question]): play.twirl.api.HtmlFormat.Appendable = apply(QuestionForm)
 
-  def f:((Form[models.Question]) => play.twirl.api.HtmlFormat.Appendable) = (questionForm) => apply(questionForm)
+  def f:((Form[models.Question]) => play.twirl.api.HtmlFormat.Appendable) = (QuestionForm) => apply(QuestionForm)
 
   def ref: this.type = this
 
@@ -243,9 +243,9 @@ for (i = 0; i < acc.length; i++) """),format.raw/*142.34*/("""{"""),format.raw/*
 
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 19 15:03:46 IST 2018
+                  DATE: Sat Apr 21 20:30:50 IST 2018
                   SOURCE: /home/wdd/webapps/newWorkingVersion/Project3/app/views/FAQ.scala.html
-                  HASH: 73bc305eac851f7564fa313958cd0b2f1d7f9d31
+                  HASH: 4a89bf2bb9e677b7afda88b82b1ada7d99cca710
                   MATRIX: 961->1|1072->41|1117->39|1144->58|1171->59|1309->171|1323->177|1389->222|4131->2937|4160->2957|4200->2959|4241->2972|4325->3029|4435->3129|4475->3130|4520->3175|4566->3282|4611->3300|4624->3304|4655->3314|4718->3350|4815->3426|4861->3444|4967->3527|5013->3545|5116->3626|5221->3702|5395->3848|5411->3854|5452->3873|5669->4058|5714->4071|5765->4094|6280->4580|6310->4581|6341->4584|6414->4628|6444->4629|6477->4634|6610->4738|6640->4739|6675->4746|6737->4780|6766->4781|6795->4782|6829->4787|6859->4788|6894->4795|6977->4850|7006->4851|7038->4855|7067->4856|7098->4859|7127->4860|7156->4861
                   LINES: 28->1|31->2|34->1|35->3|36->4|41->9|41->9|41->9|122->90|122->90|122->90|123->91|125->93|125->93|125->93|126->94|127->95|128->96|128->96|128->96|131->99|131->99|132->100|132->100|133->101|133->101|139->107|141->109|141->109|141->109|146->114|147->115|150->118|174->142|174->142|175->143|175->143|175->143|176->144|178->146|178->146|179->147|180->148|180->148|180->148|180->148|180->148|181->149|182->150|182->150|183->151|183->151|184->152|184->152|185->153
                   -- GENERATED --

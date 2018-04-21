@@ -3,6 +3,6 @@
 [0m[[0m[33mwarn[0m] [0m[0m                               ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
 [0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/newWorkingVersion/Project3/app/controllers/HomeController.java:71:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   variable questionForm[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable QuestionForm[0m
 [0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
-[0m[[0m[31merror[0m] [0m[0m        return ok(views.html.FAQ.render(questionForm));[0m
+[0m[[0m[31merror[0m] [0m[0m        return ok(views.html.FAQ.render(QuestionForm));[0m
